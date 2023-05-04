@@ -1,9 +1,16 @@
-#  Uniform Manifold Approximation and Projection (UMAP)
 **Model Type:**  Dimensionality Reduction Models
 **Data Type:**  Unstructured Data
 
-**Python code **:
+## Use Cases :
 
+a. Data Visualization: UMAP can be used to visualize complex, high-dimensional data, making it easier to detect patterns, clusters, and structures within the data.
+
+b. Preprocessing for Machine Learning: UMAP can be used as a preprocessing step to reduce the dimensionality of data before feeding it into a machine learning model, potentially improving model performance and reducing training time.
+
+c. Feature Extraction: UMAP can be used to discover meaningful low-dimensional representations of high-dimensional data, which can be treated as new features and used in various data analysis tasks.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -31,6 +38,12 @@ plt.show()
 This code demonstrates how to use UMAP to perform dimensionality reduction on the Digits dataset from scikit-learn, and then visualizes the resulting low-dimensional representation using a scatter plot.
 
 
+## Resources
+
+a. UMAP documentation - The official documentation for the UMAP Python library, with installation instructions, usage examples, and more: https://umap-learn.readthedocs.io/en/latest/
+b. "How to Use UMAP" tutorial by Leland McInnes - A step-by-step tutorial on using UMAP for dimensionality reduction and data visualization by the creator of the UMAP algorithm: https://umap-learn.readthedocs.io/en/latest/basic_usage.html
+c. UMAP GitHub repository - The official GitHub repository of the UMAP Python library, with source code, examples, and issues: https://github.com/lmcinnes/umap
+
 **See Also**:
 
 - [[ K]]
@@ -41,12 +54,6 @@ This code demonstrates how to use UMAP to perform dimensionality reduction on th
 - [[ Linear Discriminant Analysis (LDA)]]
 - [[ t]]
 - [[ Autoencoders]]
-## Resources
-
-a. UMAP documentation - The official documentation for the UMAP Python library, with installation instructions, usage examples, and more: https://umap-learn.readthedocs.io/en/latest/
-b. "How to Use UMAP" tutorial by Leland McInnes - A step-by-step tutorial on using UMAP for dimensionality reduction and data visualization by the creator of the UMAP algorithm: https://umap-learn.readthedocs.io/en/latest/basic_usage.html
-c. UMAP GitHub repository - The official GitHub repository of the UMAP Python library, with source code, examples, and issues: https://github.com/lmcinnes/umap
-
 
 ---
-tags: #-unstructured-data, #-unstructured-data/-uniform-manifold-approximation-and-projection-umap
+tags: #unstructureddata, #unstructureddata/uniformmanifoldapproximationandprojectionumap

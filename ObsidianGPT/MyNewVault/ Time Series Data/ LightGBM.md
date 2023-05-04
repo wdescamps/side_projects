@@ -1,9 +1,16 @@
-#  LightGBM
 **Model Type:**  Exponential Smoothing State Space Models (ETS)
 **Data Type:**  Time Series Data
 
-**Python code **:
+## Use Cases :
 
+a. Binary and Multiclass Classification: LightGBM is suitable for binary and multiclass classification problems where high accuracy is required and datasets may be large.
+
+b. Regression: LightGBM can be used to handle regression tasks, enabling the prediction of continuous numerical output by minimizing the loss function.
+
+c. Ranking: LightGBM can be adapted to tackle ranking problems by incorporating query and relevance data, optimizing it for applications such as search engine result rankings or recommendation systems.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -53,15 +60,6 @@ print('Accuracy:', accuracy)
 This example demonstrates the use of LightGBM for a multiclass classification task on the Iris dataset. It imports the necessary libraries, loads the data, and splits it into training and testing sets. The data is then converted into the LightGBM Dataset format, and parameters for the model are defined. After training, the model is applied to make predictions on the test set, and its accuracy is evaluated.
 
 
-**See Also**:
-
-- [[ Autoregressive Integrated Moving Average (ARIMA)]]
-- [[ Seasonal decomposition of time series (STL)]]
-- [[ Recurrent Neural Networks (RNN)]]
-- [[ Long Short]]
-- [[ Gated Recurrent Units (GRU)]]
-- [[ Facebook Prophet]]
-- [[ XGBoost]]
 ## Resources
 
 a. Official LightGBM GitHub repository: https://github.com/microsoft/LightGBM
@@ -71,6 +69,15 @@ This comprehensive documentation provides an outline of the Python API and detai
 c. A Gentle Introduction to LightGBM for Applied Machine Learning: https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/
 This article provides a thorough introduction to the LightGBM model, explaining key concepts, techniques used, and practical guidance on how to employ it in machine learning tasks.
 
+**See Also**:
+
+- [[ Autoregressive Integrated Moving Average (ARIMA)]]
+- [[ Seasonal decomposition of time series (STL)]]
+- [[ Recurrent Neural Networks (RNN)]]
+- [[ Long Short]]
+- [[ Gated Recurrent Units (GRU)]]
+- [[ Facebook Prophet]]
+- [[ XGBoost]]
 
 ---
-tags: #-time-series-data, #-time-series-data/-lightgbm
+tags: #timeseriesdata, #timeseriesdata/lightgbm

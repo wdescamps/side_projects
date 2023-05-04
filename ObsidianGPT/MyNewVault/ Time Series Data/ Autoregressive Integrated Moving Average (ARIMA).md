@@ -1,9 +1,16 @@
-#  Autoregressive Integrated Moving Average (ARIMA)
 **Model Type:**  Forecasting Models
 **Data Type:**  Time Series Data
 
-**Python code **:
+## Use Cases :
 
+a. Forecasting stock prices or market trends based on historical data.
+
+b. Predicting electricity consumption based on past consumption patterns.
+
+c. Estimating product demand or sales volume in different periods of time.
+
+
+## Python code: 
 
 ```python
 import pandas as pd
@@ -48,6 +55,12 @@ plt.show()
 This code demonstrates the use of the ARIMA model for time series forecasting. It loads a dataset containing daily minimum temperatures, visualizes the data, and creates an ARIMA(5,1,1) model. The model is then used to make forecasts for the next 30 days, and the forecasts are visualized alongside the observed temperature for comparison.
 
 
+## Resources
+
+a. The ARIMA model in-depth explanation and Python examples: https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
+b. Time Series Forecasting with ARIMA in Python: https://www.datacamp.com/community/tutorials/time-series-analysis-tutorial
+c. Statsmodels ARIMA documentation: https://www.statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.html
+
 **See Also**:
 
 - [[ Seasonal decomposition of time series (STL)]]
@@ -57,12 +70,6 @@ This code demonstrates the use of the ARIMA model for time series forecasting. I
 - [[ Facebook Prophet]]
 - [[ LightGBM]]
 - [[ XGBoost]]
-## Resources
-
-a. The ARIMA model in-depth explanation and Python examples: https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
-b. Time Series Forecasting with ARIMA in Python: https://www.datacamp.com/community/tutorials/time-series-analysis-tutorial
-c. Statsmodels ARIMA documentation: https://www.statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.html
-
 
 ---
-tags: #-time-series-data, #-time-series-data/-autoregressive-integrated-moving-average-arima
+tags: #timeseriesdata, #timeseriesdata/autoregressiveintegratedmovingaveragearima

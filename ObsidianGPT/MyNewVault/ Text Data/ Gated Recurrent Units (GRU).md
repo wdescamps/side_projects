@@ -1,9 +1,16 @@
-#  Gated Recurrent Units (GRU)
 **Model Type:**  Natural Language Processing Models
 **Data Type:**  Text Data
 
-**Python code **:
+## Use Cases :
 
+a. Language modeling: GRUs can be used for predicting the next word in a sequence or generating text given a specific context, thus helping in various natural language processing (NLP) tasks.
+
+b. Time series prediction: GRUs can be used to model time-dependent data, such as stock prices, weather data, or sensor data, making accurate predictions on future values.
+
+c. Speech recognition: Due to their ability to capture long-range dependencies in sequences, GRUs can be employed in speech recognition systems, where they can model the temporal dynamics of audio signals for improved transcription accuracy.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -42,6 +49,15 @@ model.fit(input_sequences, labels, epochs=100)
 This example demonstrates the use of the GRU model for simple text classification using TensorFlow. The model takes a sequence of words, maps them into an embedding space, and feeds them into a GRU layer, followed by a dense layer to produce the final output.
 
 
+## Resources
+
+a. TensorFlow documentation: This official guide demonstrates how to create a GRU layer in TensorFlow and use it in your deep learning models.
+Link: https://www.tensorflow.org/api_docs/python/tf/keras/layers/GRU
+b. PyTorch documentation: This official guide demonstrates how to create a GRU layer in PyTorch and use it in your deep learning models.
+Link: https://pytorch.org/docs/stable/generated/torch.nn.GRU.html
+c. Understanding GRU networks: This blog post by Christopher Olah provides a high-level understanding of GRUs and their inner workings, along with accompanying visualizations.
+Link: https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+
 **See Also**:
 
 - [[ Bag of Words]]
@@ -52,15 +68,6 @@ This example demonstrates the use of the GRU model for simple text classificatio
 - [[ Recurrent Neural Networks (RNN)]]
 - [[ Long Short]]
 - [[ Transformers (e.g., BERT, GPT, T5, RoBERTa)]]
-## Resources
-
-a. TensorFlow documentation: This official guide demonstrates how to create a GRU layer in TensorFlow and use it in your deep learning models.
-Link: https://www.tensorflow.org/api_docs/python/tf/keras/layers/GRU
-b. PyTorch documentation: This official guide demonstrates how to create a GRU layer in PyTorch and use it in your deep learning models.
-Link: https://pytorch.org/docs/stable/generated/torch.nn.GRU.html
-c. Understanding GRU networks: This blog post by Christopher Olah provides a high-level understanding of GRUs and their inner workings, along with accompanying visualizations.
-Link: https://colah.github.io/posts/2015-08-Understanding-LSTMs/
-
 
 ---
-tags: #-text-data, #-text-data/-gated-recurrent-units-gru
+tags: #textdata, #textdata/gatedrecurrentunitsgru

@@ -1,9 +1,16 @@
-#  Transformer models
 **Model Type:**  Music Generation Models
 **Data Type:**  Audio Data
 
-**Python code **:
+## Use Cases :
 
+a. Machine Translation: The original use case for Transformer models, where source language text is translated into the target language text.
+
+b. Sentiment Analysis: Transformers can learn contextual information and classify the sentiment of text, such as determining whether a review is positive or negative.
+
+c. Text Summarization: Transformers can produce coherent summaries of long input texts, making them suitable for tasks like news article summarization.
+
+
+## Python code: 
 Here's a simple example using the Hugging Face `transformers` library to perform sentiment analysis with a pre-trained BERT model.
 
 ```python
@@ -29,6 +36,12 @@ for i, result in enumerate(results):
 This code installs the `transformers` library, initializes a sentiment analysis pipeline with a pre-trained BERT model, and performs sentiment analysis on a list of input texts, outputting the sentiment and score for each text.
 
 
+## Resources
+
+a. The original Transformer paper, which details the architecture and mechanisms used in the model: https://arxiv.org/abs/1706.03762
+b. The Hugging Face's `transformers` library is an extensive collection of pre-trained Transformer models and utilities for Python: https://huggingface.co/transformers/
+c. A step-by-step guide to implementing the Transformer model with TensorFlow: https://www.tensorflow.org/tutorials/text/transformer
+
 **See Also**:
 
 - [[ Mel Frequency Cepstral Coefficients (MFCC)]]
@@ -48,12 +61,6 @@ This code installs the `transformers` library, initializes a sentiment analysis 
 - [[ Model]]
 - [[ Monte Carlo Tree Search (MCTS)]]
 - [[ PILCO]]
-## Resources
-
-a. The original Transformer paper, which details the architecture and mechanisms used in the model: https://arxiv.org/abs/1706.03762
-b. The Hugging Face's `transformers` library is an extensive collection of pre-trained Transformer models and utilities for Python: https://huggingface.co/transformers/
-c. A step-by-step guide to implementing the Transformer model with TensorFlow: https://www.tensorflow.org/tutorials/text/transformer
-
 
 ---
-tags: #-audio-data, #-audio-data/-transformer-models
+tags: #audiodata, #audiodata/transformermodels

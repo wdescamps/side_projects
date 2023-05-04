@@ -1,9 +1,16 @@
-#  DenseNet
 **Model Type:**  Computer Vision Models
 **Data Type:**  Image Data
 
-**Python code **:
+## Use Cases :
 
+a) Image Classification: DenseNet has been highly successful in image classification tasks, providing state-of-the-art results on several benchmark datasets such as CIFAR-10, CIFAR-100, and ImageNet.
+
+b) Object Detection: DenseNet can be used as the backbone network for object detection tasks, where it performs feature extraction, which can then be combined with other frameworks, such as Faster R-CNN, for detecting objects within images.
+
+c) Semantic Segmentation: DenseNet can also be used for semantic segmentation tasks, where it is necessary to assign a class label to each pixel in an image. By combining DenseNet with other architectures such as U-Net, dense connectivity can enhance the model's feature extraction ability and improve segmentation results.
+
+
+## Python code: 
 
 ```python
 import keras
@@ -46,6 +53,15 @@ model.fit_generator(
 This code demonstrates the use of DenseNet for an image classification task. The script imports necessary libraries, loads and pre-processes the data, builds the model, and trains the model using the provided data.
 
 
+## Resources
+
+a) Original DenseNet paper: This is the original research paper where DenseNet was first proposed. The paper contains a detailed explanation of the DenseNet architecture and its functioning.
+Link: https://arxiv.org/abs/1608.06993
+b) Keras Documentation on DenseNet: Keras, a popular deep learning library, has a built-in implementation of DenseNet. This documentation provides information on using DenseNet in various applications.
+Link: https://keras.io/api/applications/densenet/
+c) DenseNet implementation in PyTorch: This GitHub repository contains a PyTorch implementation of DenseNet with pre-trained models available for different applications.
+Link: https://github.com/liuzhuang13/DenseNet
+
 **See Also**:
 
 - [[ Convolutional Neural Networks (CNN)]]
@@ -59,15 +75,6 @@ This code demonstrates the use of DenseNet for an image classification task. The
 - [[ StyleGAN]]
 - [[ Pix2Pix]]
 - [[ CycleGAN]]
-## Resources
-
-a) Original DenseNet paper: This is the original research paper where DenseNet was first proposed. The paper contains a detailed explanation of the DenseNet architecture and its functioning.
-Link: https://arxiv.org/abs/1608.06993
-b) Keras Documentation on DenseNet: Keras, a popular deep learning library, has a built-in implementation of DenseNet. This documentation provides information on using DenseNet in various applications.
-Link: https://keras.io/api/applications/densenet/
-c) DenseNet implementation in PyTorch: This GitHub repository contains a PyTorch implementation of DenseNet with pre-trained models available for different applications.
-Link: https://github.com/liuzhuang13/DenseNet
-
 
 ---
-tags: #-image-data, #-image-data/-densenet
+tags: #imagedata, #imagedata/densenet

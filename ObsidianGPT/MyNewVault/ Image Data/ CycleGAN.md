@@ -1,9 +1,16 @@
-#  CycleGAN
 **Model Type:**  Image Generation Models
 **Data Type:**  Image Data
 
-**Python code **:
+## Use Cases :
 
+a. Image Style Transfer: CycleGAN can be used to transfer the style of one image or set of images onto other images, e.g., turning a photograph into a painting of a specific art style (Van Gogh, Monet, etc.) or transforming a summertime scene into a winter scene.
+
+b. Domain Adaptation: CycleGAN can be used for domain adaptation tasks in which there is a need to transfer labeled data from one domain to another domain, e.g., adapting segmentation maps to real images or changing the appearance of an image while maintaining the underlying semantic information.
+
+c. Data Augmentation: In scenarios where there is limited labeled data, CycleGAN can generate additional data by transforming existing data to maintain diversity and enhance training processes, e.g., generating new examples of handwritten digits or applying various image styles to input data.
+
+
+## Python code: 
 
 Here's an example of using a pre-trained CycleGAN model on an image. Note that you'll need to install 'torch', 'torchvision', and 'PIL' libraries via pip, and download the pre-trained model before running the code.
 
@@ -53,6 +60,15 @@ if __name__ == '__main__':
 Make sure to replace 'PATH/TO/INPUT/IMAGE', 'PATH/TO/OUTPUT/FILE', and 'PATH/TO/PRETRAINED/MODEL' with appropriate paths for your input image, output file, and pre-trained model, respectively.
 
 
+## Resources
+
+a. CycleGAN Official Project Page: The official project page of CycleGAN provides access to the code, dataset, and pre-trained models. Use this resource to learn more about the project and access the base code for CycleGAN.
+Link: https://junyanz.github.io/CycleGAN/
+b. CycleGAN GitHub Repository: The official GitHub repository of CycleGAN offers the source code along with documentation on how to use the code, train your model, and access pre-trained models.
+Link: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+c. TensorFlow Implementation: If you prefer using TensorFlow, this GitHub repository provides an alternative implementation of CycleGAN using TensorFlow.
+Link: https://github.com/leehomyc/cyclegan-1
+
 **See Also**:
 
 - [[ Convolutional Neural Networks (CNN)]]
@@ -66,15 +82,6 @@ Make sure to replace 'PATH/TO/INPUT/IMAGE', 'PATH/TO/OUTPUT/FILE', and 'PATH/TO/
 - [[ Generative Adversarial Networks (GAN)]]
 - [[ StyleGAN]]
 - [[ Pix2Pix]]
-## Resources
-
-a. CycleGAN Official Project Page: The official project page of CycleGAN provides access to the code, dataset, and pre-trained models. Use this resource to learn more about the project and access the base code for CycleGAN.
-Link: https://junyanz.github.io/CycleGAN/
-b. CycleGAN GitHub Repository: The official GitHub repository of CycleGAN offers the source code along with documentation on how to use the code, train your model, and access pre-trained models.
-Link: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
-c. TensorFlow Implementation: If you prefer using TensorFlow, this GitHub repository provides an alternative implementation of CycleGAN using TensorFlow.
-Link: https://github.com/leehomyc/cyclegan-1
-
 
 ---
-tags: #-image-data, #-image-data/-cyclegan
+tags: #imagedata, #imagedata/cyclegan

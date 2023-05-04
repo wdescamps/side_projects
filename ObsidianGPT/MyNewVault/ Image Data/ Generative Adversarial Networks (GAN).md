@@ -1,9 +1,16 @@
-#  Generative Adversarial Networks (GAN)
 **Model Type:**  Image Generation Models
 **Data Type:**  Image Data
 
-**Python code **:
+## Use Cases :
 
+a. Image Synthesis and Augmentation: GANs can generate realistic high-resolution images, creating new samples or interpolating between existing samples. This technique is useful for generating additional training data, image inpainting, or creating artistic work.
+
+b. Style Transfer: GANs can learn to transfer the style from one image to another, allowing for the creation of new images by combining the content of one image with the style of another. This has applications in computer graphics and art, such as generating artistic filters or neural style transfer.
+
+c. De-noising and Super-Resolution: GANs can enhance and improve the quality of low-resolution and noisy images by generating high-resolution and clearer versions of the input images. This can be useful for improving the quality of medical imaging, satellite imagery, or enhancing low-quality photos.
+
+
+## Python code: 
 
 ```
 import tensorflow as tf
@@ -109,6 +116,15 @@ plt.show()
 This code demonstrates an implementation of a simple GAN using TensorFlow to generate samples of the MNIST digit dataset. The Generator and Discriminator neural networks are defined, and their respective losses and optimizers are established. The `train_gan` function trains the GAN for the given number of epochs, and then a sample generated image is displayed.
 
 
+## Resources
+
+a. Generative Adversarial Networks in TensorFlow: An official tutorial from TensorFlow that walks you through the process of implementing a GAN using TensorFlow 2.x.
+Link: https://www.tensorflow.org/tutorials/generative/dcgan
+b. Keras-GAN: A collection of Keras implementations of GANs, including DCGAN, CycleGAN, and more, which can serve as a starting point for implementing your own GANs using Keras library.
+Link: https://github.com/eriklindernoren/Keras-GAN
+c. GAN Lab: A visual experiment to interactively learn and understand GANs, by generating samples and observing the training process in real-time, developed by Google.
+Link: https://poloclub.github.io/ganlab/
+
 **See Also**:
 
 - [[ Convolutional Neural Networks (CNN)]]
@@ -122,15 +138,6 @@ This code demonstrates an implementation of a simple GAN using TensorFlow to gen
 - [[ StyleGAN]]
 - [[ Pix2Pix]]
 - [[ CycleGAN]]
-## Resources
-
-a. Generative Adversarial Networks in TensorFlow: An official tutorial from TensorFlow that walks you through the process of implementing a GAN using TensorFlow 2.x.
-Link: https://www.tensorflow.org/tutorials/generative/dcgan
-b. Keras-GAN: A collection of Keras implementations of GANs, including DCGAN, CycleGAN, and more, which can serve as a starting point for implementing your own GANs using Keras library.
-Link: https://github.com/eriklindernoren/Keras-GAN
-c. GAN Lab: A visual experiment to interactively learn and understand GANs, by generating samples and observing the training process in real-time, developed by Google.
-Link: https://poloclub.github.io/ganlab/
-
 
 ---
-tags: #-image-data, #-image-data/-generative-adversarial-networks-gan
+tags: #imagedata, #imagedata/generativeadversarialnetworksgan

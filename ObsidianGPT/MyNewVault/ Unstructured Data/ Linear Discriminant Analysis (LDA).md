@@ -1,9 +1,16 @@
-#  Linear Discriminant Analysis (LDA)
 **Model Type:**  Dimensionality Reduction Models
 **Data Type:**  Unstructured Data
 
-**Python code **:
+## Use Cases :
 
+a. Text Classification: LDA can be used to classify documents into different categories such as spam detection, sentiment analysis, and categorizing news articles.
+
+b. Image Recognition: LDA can be applied for face recognition and identifying objects in images.
+
+c. Dimensionality Reduction: LDA can be used as a feature extraction technique to reduce the dimensions of high-dimensional data, making it suitable for visualization and further processing by other machine learning algorithms.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -36,6 +43,15 @@ print("Linear Discriminant Analysis model's accuracy: {:.2f}%".format(accuracy *
 This code demonstrates how to use the Linear Discriminant Analysis model for classification using the Iris dataset. We first import the necessary packages and load the dataset. Then, we split the data into training and testing sets, create and fit the LDA model, and finally evaluate its accuracy.
 
 
+## Resources
+
+a. Scikit-learn documentation for Linear Discriminant Analysis:
+https://scikit-learn.org/stable/modules/lda_qda.html
+b. An in-depth explanation and example code for LDA by Sebastian Raschka:
+https://sebastianraschka.com/Articles/2014_python_lda.html
+c. A tutorial on how to use Linear Discriminant Analysis in Python by Machine Learning Mastery:
+https://machinelearningmastery.com/linear-discriminant-analysis-for-machine-learning/
+
 **See Also**:
 
 - [[ K]]
@@ -46,15 +62,6 @@ This code demonstrates how to use the Linear Discriminant Analysis model for cla
 - [[ t]]
 - [[ Uniform Manifold Approximation and Projection (UMAP)]]
 - [[ Autoencoders]]
-## Resources
-
-a. Scikit-learn documentation for Linear Discriminant Analysis:
-https://scikit-learn.org/stable/modules/lda_qda.html
-b. An in-depth explanation and example code for LDA by Sebastian Raschka:
-https://sebastianraschka.com/Articles/2014_python_lda.html
-c. A tutorial on how to use Linear Discriminant Analysis in Python by Machine Learning Mastery:
-https://machinelearningmastery.com/linear-discriminant-analysis-for-machine-learning/
-
 
 ---
-tags: #-unstructured-data, #-unstructured-data/-linear-discriminant-analysis-lda
+tags: #unstructureddata, #unstructureddata/lineardiscriminantanalysislda

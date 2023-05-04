@@ -1,9 +1,16 @@
-#  Random Forests
 **Model Type:**  Classification Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a. Predictive Analytics: Random Forests is used in predicting customer behavior, sales forecasting, and stock market trends.
+
+b. Medical Diagnostics: The model can be employed to predict diseases and identify risk factors based on a patient's medical history and symptoms.
+
+c. Fraud Detection: Random Forests is effective in detecting anomalies and fraud cases in financial transactions or insurance claims.
+
+
+## Python code: 
 
 ```python
 # Importing libraries
@@ -38,6 +45,17 @@ print("Classification Report:\n", classification_report(y_test, predictions))
 This code demonstrates the use of the Random Forest classification model to predict iris species using the famous iris dataset. The RandomForestClassifier from scikit-learn is imported and used to fit the model on the training data, make predictions on the test data, and evaluate the model's accuracy.
 
 
+## Resources
+
+a. Scikit-Learn documentation: Random Forests is implemented in Python's scikit-learn library, which provides comprehensive documentation and examples.
+Link: https://scikit-learn.org/stable/modules/ensemble.html#forest
+b. DataCamp tutorial on Random Forests:
+This tutorial offers a step-by-step instruction for implementing Random Forests in Python, covering both classification and regression problems.
+Link: https://www.datacamp.com/community/tutorials/random-forests-classifier-python
+c. Towards Data Science article on Random Forests:
+This article provides an introduction to Random Forests, its advantages, and disadvantages while explaining its implementation in Python.
+Link: https://towardsdatascience.com/understanding-random-forest-58381e0602d2
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -62,17 +80,6 @@ This code demonstrates the use of the Random Forest classification model to pred
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a. Scikit-Learn documentation: Random Forests is implemented in Python's scikit-learn library, which provides comprehensive documentation and examples.
-Link: https://scikit-learn.org/stable/modules/ensemble.html#forest
-b. DataCamp tutorial on Random Forests:
-This tutorial offers a step-by-step instruction for implementing Random Forests in Python, covering both classification and regression problems.
-Link: https://www.datacamp.com/community/tutorials/random-forests-classifier-python
-c. Towards Data Science article on Random Forests:
-This article provides an introduction to Random Forests, its advantages, and disadvantages while explaining its implementation in Python.
-Link: https://towardsdatascience.com/understanding-random-forest-58381e0602d2
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-random-forests
+tags: #numericaldata, #numericaldata/randomforests

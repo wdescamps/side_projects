@@ -1,9 +1,16 @@
-#  Logistic Regression
 **Model Type:**  Classification Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a. Medical Diagnosis: Logistic regression can be used to predict the likelihood of a patient having a particular disease given certain symptoms or test results.
+
+b. Spam Detection: The model can be utilized to classify emails into spam and non-spam categories based on the presence of certain keywords or patterns.
+
+c. Credit Risk Analysis: Logistic regression can help assess the probability of a borrower defaulting on a loan based on factors such as income, credit score, and loan amount.
+
+
+## Python code: 
 
 ```python
 # Import required libraries
@@ -37,6 +44,15 @@ print("Confusion Matrix:\n", conf_matrix)
 The above code demonstrates how to implement logistic regression using Scikit-learn on a sample dataset. After creating the dataset, it is split into training and testing sets. A logistic regression model is then created and trained on the training set, tested on the test set, and evaluated using accuracy and confusion matrix metrics.
 
 
+## Resources
+
+a. Scikit-learn Documentation: A widely used Python library for machine learning, the logistic regression implementation in Scikit-learn is easy to use and comes with comprehensive documentation.
+Link: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+b. Coursera Course (Machine Learning by Andrew Ng): This course provides a deep understanding of logistic regression, including the math behind the model and how it can be implemented.
+Link: https://www.coursera.org/learn/machine-learning
+c. Towards Data Science Article: This article explains the intuition behind logistic regression and provides an example of how to implement the model using Python and Scikit-learn.
+Link: https://towardsdatascience.com/logistic-regression-a-simplified-approach-using-python-c4bc81a87c31
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -61,15 +77,6 @@ The above code demonstrates how to implement logistic regression using Scikit-le
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a. Scikit-learn Documentation: A widely used Python library for machine learning, the logistic regression implementation in Scikit-learn is easy to use and comes with comprehensive documentation.
-Link: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
-b. Coursera Course (Machine Learning by Andrew Ng): This course provides a deep understanding of logistic regression, including the math behind the model and how it can be implemented.
-Link: https://www.coursera.org/learn/machine-learning
-c. Towards Data Science Article: This article explains the intuition behind logistic regression and provides an example of how to implement the model using Python and Scikit-learn.
-Link: https://towardsdatascience.com/logistic-regression-a-simplified-approach-using-python-c4bc81a87c31
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-logistic-regression
+tags: #numericaldata, #numericaldata/logisticregression

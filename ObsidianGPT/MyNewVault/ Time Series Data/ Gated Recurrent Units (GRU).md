@@ -1,9 +1,16 @@
-#  Gated Recurrent Units (GRU)
 **Model Type:**  Exponential Smoothing State Space Models (ETS)
 **Data Type:**  Time Series Data
 
-**Python code **:
+## Use Cases :
 
+a. Language modeling and text generation: GRUs can be used to predict the next word in a sentence, given a sequence of words, and be utilized in tasks such as text generation, summarization, or machine translation.
+
+b. Time series prediction: GRU models can be employed to forecast future values in time series data, such as stock prices, weather patterns, or energy consumption.
+
+c. Speech recognition and synthesis: GRUs can be applied to model the sequence of acoustic signals in speech data, enabling applications like automatic speech recognition, speaker identification, and speech synthesis.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -50,15 +57,6 @@ print(f"Test accuracy: {accuracy * 100:.2f}%")
 This code demonstrates how to use a GRU model to classify whether the sum of the elements in a synthetic time series is greater than half the sequence length. The code builds and trains a GRU model using TensorFlow Keras, and prints the test accuracy of the model.
 
 
-**See Also**:
-
-- [[ Autoregressive Integrated Moving Average (ARIMA)]]
-- [[ Seasonal decomposition of time series (STL)]]
-- [[ Recurrent Neural Networks (RNN)]]
-- [[ Long Short]]
-- [[ Facebook Prophet]]
-- [[ LightGBM]]
-- [[ XGBoost]]
 ## Resources
 
 a. TensorFlow: GRU Layer: Comprehensive documentation on the GRU layer provided by TensorFlow, including detailed information on functionality, parameters, and examples.
@@ -68,6 +66,15 @@ Link: https://keras.io/examples/nlp/pretrained_word_embeddings/
 c. Understanding GRUs: A blog post by Chris Olah that visually and intuitively explains the concept and mechanisms of GRUs.
 Link: https://colah.github.io/posts/2015-08-Understanding-LSTMs/
 
+**See Also**:
+
+- [[ Autoregressive Integrated Moving Average (ARIMA)]]
+- [[ Seasonal decomposition of time series (STL)]]
+- [[ Recurrent Neural Networks (RNN)]]
+- [[ Long Short]]
+- [[ Facebook Prophet]]
+- [[ LightGBM]]
+- [[ XGBoost]]
 
 ---
-tags: #-time-series-data, #-time-series-data/-gated-recurrent-units-gru
+tags: #timeseriesdata, #timeseriesdata/gatedrecurrentunitsgru

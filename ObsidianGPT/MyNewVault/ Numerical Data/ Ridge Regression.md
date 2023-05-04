@@ -1,9 +1,16 @@
-#  Ridge Regression
 **Model Type:**  Regression Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a) Predicting house prices: Ridge Regression can be used to predict house prices based on various factors such as area, number of rooms, and locality.
+
+b) Stock price prediction: Ridge Regression can be used to predict the prices of various stocks based on historical data and other features that may affect prices.
+
+c) Sales forecasting: Ridge Regression can be applied to sales data, along with other explanatory variables, to create a forecast for future sales.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -36,6 +43,12 @@ print("Coefficients:", ridge_model.coef_)
 This code snippet generates synthetic data, splits it into training and testing sets, trains a Ridge Regression model, performs predictions and evaluates the performance, and finally prints the learned coefficients.
 
 
+## Resources
+
+a) Ridge Regression in scikit-learn: https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression
+b) Ridge Regression tutorial by Analytics Vidhya: https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-ridge-lasso-regression-python/
+c) Ridge Regression explained by StatQuest: https://www.youtube.com/watch?v=Q81RR3yKn30
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -60,12 +73,6 @@ This code snippet generates synthetic data, splits it into training and testing 
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a) Ridge Regression in scikit-learn: https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression
-b) Ridge Regression tutorial by Analytics Vidhya: https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-ridge-lasso-regression-python/
-c) Ridge Regression explained by StatQuest: https://www.youtube.com/watch?v=Q81RR3yKn30
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-ridge-regression
+tags: #numericaldata, #numericaldata/ridgeregression

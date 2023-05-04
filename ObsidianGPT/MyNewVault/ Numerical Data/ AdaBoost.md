@@ -1,9 +1,16 @@
-#  AdaBoost
 **Model Type:**  Classification Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a. Object Detection: AdaBoost is commonly used in computer vision tasks, like detecting objects, faces, or pedestrians within images.
+
+b. Text Classification: AdaBoost can be applied in tasks like sentiment analysis or spam email detection, where the goal is to classify text into pre-defined categories.
+
+c. Speech Recognition: It can also be used in speech processing tasks, such as speaker identification or emotion classification from speech data.
+
+
+## Python code: 
 
 ```python
 import pandas as pd
@@ -33,6 +40,15 @@ print("Classification Report:\n", classification_report(y_test, y_pred))
 This code demonstrates how to use the AdaBoost Classifier from scikit-learn library to classify the Iris dataset. It evaluates the model's performance on a test set using the accuracy score and classification report.
 
 
+## Resources
+
+a. Introduction to AdaBoost Algorithm: This article by Analytics Vidhya provides an intuitive explanation of AdaBoost, its working, and python implementation from scratch.
+Link: https://www.analyticsvidhya.com/blog/2021/10/introduction-to-adaboost-algorithm-with-python-implementation/
+b. AdaBoost Classifier in Python: This detailed tutorial from machinelearningmastery.com explains how to implement the AdaBoost algorithm using the scikit-learn library in Python.
+Link: https://machinelearningmastery.com/adaboost-ensemble-in-python/
+c. AdaBoost Video Lecture: This lecture video by Prof. Yaser Abu-Mostafa is part of the Caltech's "Learning from Data" course and provides a comprehensive understanding of the AdaBoost algorithm.
+Link: https://www.youtube.com/watch?v=UHBmv7qCey4
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -57,15 +73,6 @@ This code demonstrates how to use the AdaBoost Classifier from scikit-learn libr
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a. Introduction to AdaBoost Algorithm: This article by Analytics Vidhya provides an intuitive explanation of AdaBoost, its working, and python implementation from scratch.
-Link: https://www.analyticsvidhya.com/blog/2021/10/introduction-to-adaboost-algorithm-with-python-implementation/
-b. AdaBoost Classifier in Python: This detailed tutorial from machinelearningmastery.com explains how to implement the AdaBoost algorithm using the scikit-learn library in Python.
-Link: https://machinelearningmastery.com/adaboost-ensemble-in-python/
-c. AdaBoost Video Lecture: This lecture video by Prof. Yaser Abu-Mostafa is part of the Caltech's "Learning from Data" course and provides a comprehensive understanding of the AdaBoost algorithm.
-Link: https://www.youtube.com/watch?v=UHBmv7qCey4
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-adaboost
+tags: #numericaldata, #numericaldata/adaboost

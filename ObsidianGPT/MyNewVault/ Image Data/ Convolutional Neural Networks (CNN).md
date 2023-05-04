@@ -1,9 +1,16 @@
-#  Convolutional Neural Networks (CNN)
 **Model Type:**  Computer Vision Models
 **Data Type:**  Image Data
 
-**Python code **:
+## Use Cases :
 
+a) Image classification: CNNs can identify and categorize objects within images with high accuracy. This is a core task in many computer vision applications, such as autonomous vehicles, medical imaging, and surveillance systems.
+
+b) Object detection: CNNs can find and localize multiple objects within an image, making them suitable for applications in which detecting and recognizing objects of interest is required, such as traffic monitoring, retail analytics, and facial recognition.
+
+c) Semantic segmentation: CNNs can also be used to label each pixel of an image with a class, which provides a detailed understanding of the scene. This is useful in fields like autonomous navigation, where understanding the delineation of objects like roads, sidewalks, and pedestrians is crucial.
+
+
+## Python code: 
 
 ```python
 import tensorflow as tf
@@ -39,6 +46,15 @@ model.evaluate(x_test, y_test)
 This code snippet uses TensorFlow to create a simple CNN model for the image classification task. The model is trained on the MNIST dataset, which contains images of handwritten digits. The CNN consists of two convolutional layers, followed by two max-pooling layers, a fully connected layer, and the output layer. The model is compiled with the Adam optimizer and is trained on the training set for five epochs. Finally, the performance of the model is evaluated on the test set.
 
 
+## Resources
+
+a) CS231n: Convolutional Neural Networks for Visual Recognition: This is a popular course from Stanford University that provides excellent lectures, slides, and assignments on CNNs. The course covers different aspects of CNNs, their architectures, and applications.
+Link: http://cs231n.stanford.edu/
+b) TensorFlow CNN tutorial: This tutorial from the official TensorFlow website demonstrates how to implement a simple CNN model for image classification using the popular deep learning library TensorFlow.
+Link: https://www.tensorflow.org/tutorials/images/cnn
+c) Keras documentation for Conv2D: Keras is a high-level deep learning library built on TensorFlow, and it provides a simple interface for constructing and training CNN models. This link provides excellent documentation on Keras' Conv2D layer, which is a critical part of building a CNN.
+Link: https://keras.io/api/layers/convolution_layers/convolution2d/
+
 **See Also**:
 
 - [[ ResNet]]
@@ -52,15 +68,6 @@ This code snippet uses TensorFlow to create a simple CNN model for the image cla
 - [[ StyleGAN]]
 - [[ Pix2Pix]]
 - [[ CycleGAN]]
-## Resources
-
-a) CS231n: Convolutional Neural Networks for Visual Recognition: This is a popular course from Stanford University that provides excellent lectures, slides, and assignments on CNNs. The course covers different aspects of CNNs, their architectures, and applications.
-Link: http://cs231n.stanford.edu/
-b) TensorFlow CNN tutorial: This tutorial from the official TensorFlow website demonstrates how to implement a simple CNN model for image classification using the popular deep learning library TensorFlow.
-Link: https://www.tensorflow.org/tutorials/images/cnn
-c) Keras documentation for Conv2D: Keras is a high-level deep learning library built on TensorFlow, and it provides a simple interface for constructing and training CNN models. This link provides excellent documentation on Keras' Conv2D layer, which is a critical part of building a CNN.
-Link: https://keras.io/api/layers/convolution_layers/convolution2d/
-
 
 ---
-tags: #-image-data, #-image-data/-convolutional-neural-networks-cnn
+tags: #imagedata, #imagedata/convolutionalneuralnetworkscnn

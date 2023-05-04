@@ -1,9 +1,10 @@
-#  AdaBoost Regression
 **Model Type:**  Regression Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+
+## Python code: 
 ```python
 # Import required libraries
 from sklearn.model_selection import train_test_split
@@ -39,6 +40,9 @@ print("R-squared Score:", r2)
 This code implements AdaBoost Regression on the Boston House Prices dataset using sklearn's AdaBoostRegressor. It prints the Mean Squared Error and R-squared score to evaluate the performance of the model.
 
 
+## Resources
+
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -63,9 +67,6 @@ This code implements AdaBoost Regression on the Boston House Prices dataset usin
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-adaboost-regression
+tags: #numericaldata, #numericaldata/adaboostregression

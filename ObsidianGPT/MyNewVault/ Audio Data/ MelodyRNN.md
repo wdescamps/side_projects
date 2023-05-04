@@ -1,9 +1,16 @@
-#  MelodyRNN
 **Model Type:**  Music Generation Models
 **Data Type:**  Audio Data
 
-**Python code **:
+## Use Cases :
 
+a. Music composition: MelodyRNN can be used to generate original melodies or musical ideas, which can be useful for composers or musicians when creating new songs or instrumental pieces.
+
+b. Algorithmic accompaniment: MelodyRNN can be used as a foundation for creating interactive music systems, where it generates a melody based on a given set of rules or user inputs in real-time, potentially used in live performances or installations.
+
+c. Music education: MelodyRNN can be used as a tool in teaching and learning music, allowing students to analyze and understand the patterns and structures used in different melodies.
+
+
+## Python code: 
 
 Note: Before executing the code, make sure to install Magenta and its dependencies as described in the GitHub repository.
 
@@ -39,6 +46,15 @@ magenta.music.midi_io.sequence_proto_to_midi_file(generated_sequence, output_fil
 This code demonstrates how to use MelodyRNN to generate a new melody. It reads an input MIDI file containing the initial melody, generates an extension for the melody using the MelodyRNN model, and saves the result to a new MIDI file.
 
 
+## Resources
+
+a. Magenta's official GitHub repository provides the source code and detailed instructions for building and training MelodyRNN:
+- https://github.com/magenta/magenta/tree/main/magenta/models/melody_rnn
+b. Magenta's official blog post about the MelodyRNN model gives an overview and explanation of the model's architecture and capabilities:
+- https://magenta.tensorflow.org/2016/07/15/lookback-rnn-attention_rnn/
+c. TensorFlow's official documentation on LSTMs and RNNs can be helpful for understanding the underlying concepts and techniques used in MelodyRNN:
+- https://www.tensorflow.org/guide/keras/rnn
+
 **See Also**:
 
 - [[ Mel Frequency Cepstral Coefficients (MFCC)]]
@@ -58,15 +74,6 @@ This code demonstrates how to use MelodyRNN to generate a new melody. It reads a
 - [[ Model]]
 - [[ Monte Carlo Tree Search (MCTS)]]
 - [[ PILCO]]
-## Resources
-
-a. Magenta's official GitHub repository provides the source code and detailed instructions for building and training MelodyRNN:
-- https://github.com/magenta/magenta/tree/main/magenta/models/melody_rnn
-b. Magenta's official blog post about the MelodyRNN model gives an overview and explanation of the model's architecture and capabilities:
-- https://magenta.tensorflow.org/2016/07/15/lookback-rnn-attention_rnn/
-c. TensorFlow's official documentation on LSTMs and RNNs can be helpful for understanding the underlying concepts and techniques used in MelodyRNN:
-- https://www.tensorflow.org/guide/keras/rnn
-
 
 ---
-tags: #-audio-data, #-audio-data/-melodyrnn
+tags: #audiodata, #audiodata/melodyrnn

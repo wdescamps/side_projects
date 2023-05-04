@@ -1,9 +1,16 @@
-#  Hierarchical Clustering
 **Model Type:**  Clustering Models
 **Data Type:**  Unstructured Data
 
-**Python code **:
+## Use Cases :
 
+a. Customer Segmentation: Hierarchical clustering can be used to group customers based on their behavior, preferences, or demographics, which allows businesses to target marketing efforts, improve customer experience, and increase customer retention.
+
+b. Document Clustering: It can also be applied to group similar documents or text data, such as news articles or research papers, based on their content, which helps in text categorization, information retrieval, and summarization.
+
+c. Gene Expression Analysis: Hierarchical clustering is commonly used in bioinformatics to analyze and visualize gene expression data, which helps to understand the similarities and differences between samples, identify potential biomarkers, and study the underlying biological processes.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -45,6 +52,15 @@ plt.show()
 This Python code demonstrates how to use the Hierarchical Clustering model with the help of the Scipy and Scikit-learn libraries. It generates random data points using the make_blobs function, performs hierarchical clustering using the ward linkage method, and visualizes the dendrogram. Then, it applies the agglomerative clustering algorithm to cluster the data points into three clusters and plots the result.
 
 
+## Resources
+
+a. Scikit-learn User Guide on Hierarchical Clustering:
+https://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering
+b. A Comprehensive Guide to Hierarchical Clustering in Python by Analytics Vidhya:
+https://www.analyticsvidhya.com/blog/2019/05/beginners-guide-hierarchical-clustering/
+c. Hierarchical Clustering in Python with an Example by Machine Learning Mastery:
+https://machinelearningmastery.com/hierarchical-clustering-with-python-and-scikit-learn/
+
 **See Also**:
 
 - [[ K]]
@@ -55,15 +71,6 @@ This Python code demonstrates how to use the Hierarchical Clustering model with 
 - [[ t]]
 - [[ Uniform Manifold Approximation and Projection (UMAP)]]
 - [[ Autoencoders]]
-## Resources
-
-a. Scikit-learn User Guide on Hierarchical Clustering:
-https://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering
-b. A Comprehensive Guide to Hierarchical Clustering in Python by Analytics Vidhya:
-https://www.analyticsvidhya.com/blog/2019/05/beginners-guide-hierarchical-clustering/
-c. Hierarchical Clustering in Python with an Example by Machine Learning Mastery:
-https://machinelearningmastery.com/hierarchical-clustering-with-python-and-scikit-learn/
-
 
 ---
-tags: #-unstructured-data, #-unstructured-data/-hierarchical-clustering
+tags: #unstructureddata, #unstructureddata/hierarchicalclustering

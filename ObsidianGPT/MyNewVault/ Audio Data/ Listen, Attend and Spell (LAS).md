@@ -1,9 +1,16 @@
-#  Listen, Attend and Spell (LAS)
 **Model Type:**  Hidden Markov Models (HMM)
 **Data Type:**  Audio Data
 
-**Python code **:
+## Use Cases :
 
+a. Automatic Speech Recognition (ASR): LAS can be used for transcribing spoken language into written text for various applications like transcription services, voice assistants, and more.
+
+b. Voice Command Systems: LAS can be employed in systems that require recognizing specific voice commands and executing corresponding tasks, such as smart home devices.
+
+c. Telecommunication Services: LAS can be used for real-time transcription, enabling deaf or hard-of-hearing individuals to engage in phone calls or meetings more effectively.
+
+
+## Python code: 
 Before running the code below, make sure to install the necessary packages:
 
 ```python
@@ -51,6 +58,12 @@ las.summary()
 Reminder: This code is an example and might require additional modifications based on the specific problem and dataset.
 
 
+## Resources
+
+a. The original LAS paper, "Listen, Attend and Spell" by Chan et al., provides a detailed insight into the model's architecture and training methodology. (https://arxiv.org/abs/1508.01211)
+b. TensorFlow's official Github repository containing an implementation of the LAS model using TensorFlow and Python. (https://github.com/tensorflow/models/tree/master/research/lm_commonsense)
+c. A Medium tutorial by Harshvardhan Gupta that explains the LAS model and helps implement it using Python and TensorFlow. (https://towardsdatascience.com/listen-attend-and-spell-an-all-in-one-speech-recognition-model-from-google-research-to-end-your-334d14a774ca)
+
 **See Also**:
 
 - [[ Mel Frequency Cepstral Coefficients (MFCC)]]
@@ -70,12 +83,6 @@ Reminder: This code is an example and might require additional modifications bas
 - [[ Model]]
 - [[ Monte Carlo Tree Search (MCTS)]]
 - [[ PILCO]]
-## Resources
-
-a. The original LAS paper, "Listen, Attend and Spell" by Chan et al., provides a detailed insight into the model's architecture and training methodology. (https://arxiv.org/abs/1508.01211)
-b. TensorFlow's official Github repository containing an implementation of the LAS model using TensorFlow and Python. (https://github.com/tensorflow/models/tree/master/research/lm_commonsense)
-c. A Medium tutorial by Harshvardhan Gupta that explains the LAS model and helps implement it using Python and TensorFlow. (https://towardsdatascience.com/listen-attend-and-spell-an-all-in-one-speech-recognition-model-from-google-research-to-end-your-334d14a774ca)
-
 
 ---
-tags: #-audio-data, #-audio-data/-listen,-attend-and-spell-las
+tags: #audiodata, #audiodata/listen,attendandspelllas

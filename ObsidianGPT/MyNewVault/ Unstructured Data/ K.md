@@ -1,9 +1,16 @@
-#  K
 **Model Type:**  Clustering Models
 **Data Type:**  Unstructured Data
 
-**Python code **:
+## Use Cases :
 
+a) Image recognition: KNN can be used for tasks such as image classification and character recognition, by comparing pixel values of an image with K nearest neighbors in the dataset.
+
+b) Recommender systems: KNN can be used to create recommender systems that suggest similar items to users based on their preferences, by finding K nearest neighbors with the highest similarity to the target item or user.
+
+c) Anomaly detection: KNN can be employed to identify unusual data points, by checking whether they have relatively fewer close neighbors compared to the rest of the dataset.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -38,6 +45,15 @@ print(classification_report(y_test, y_pred))
 This Python code demonstrates the use of the KNN model using Scikit-learn library for the famous Iris dataset. The KNN classifier is created with K=3, and the model is trained and evaluated using confusion matrix and classification report.
 
 
+## Resources
+
+a) Scikit-learn documentation on K Nearest Neighbors: https://scikit-learn.org/stable/modules/neighbors.html
+This is the official documentation of the popular Python library Scikit-learn, which provides a comprehensive explanation of the KNN algorithm and practical implementation instructions.
+b) KNN tutorial by Sentdex on YouTube: https://www.youtube.com/watch?v=44jq6ano5n0
+A video tutorial by Sentdex that shows how to implement KNN from scratch using Python and demonstrates how to apply it to a real-life dataset.
+c) KNN classification tutorial by Machine Learning Mastery: https://machinelearningmastery.com/tutorial-k-nearest-neighbors-in-python/
+A step-by-step tutorial with Python code examples that guide you through the implementation of KNN classification using Scikit-learn library.
+
 **See Also**:
 
 - [[ DBSCAN]]
@@ -48,15 +64,6 @@ This Python code demonstrates the use of the KNN model using Scikit-learn librar
 - [[ t]]
 - [[ Uniform Manifold Approximation and Projection (UMAP)]]
 - [[ Autoencoders]]
-## Resources
-
-a) Scikit-learn documentation on K Nearest Neighbors: https://scikit-learn.org/stable/modules/neighbors.html
-This is the official documentation of the popular Python library Scikit-learn, which provides a comprehensive explanation of the KNN algorithm and practical implementation instructions.
-b) KNN tutorial by Sentdex on YouTube: https://www.youtube.com/watch?v=44jq6ano5n0
-A video tutorial by Sentdex that shows how to implement KNN from scratch using Python and demonstrates how to apply it to a real-life dataset.
-c) KNN classification tutorial by Machine Learning Mastery: https://machinelearningmastery.com/tutorial-k-nearest-neighbors-in-python/
-A step-by-step tutorial with Python code examples that guide you through the implementation of KNN classification using Scikit-learn library.
-
 
 ---
-tags: #-unstructured-data, #-unstructured-data/-k
+tags: #unstructureddata, #unstructureddata/k

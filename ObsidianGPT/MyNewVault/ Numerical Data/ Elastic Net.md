@@ -1,9 +1,16 @@
-#  Elastic Net
 **Model Type:**  Regression Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a. High-dimensional data: Elastic Net can be used effectively in high-dimensional datasets, where the number of features is much higher than the number of data points.
+
+b. Feature selection: It is useful for feature selection, as it is capable of effectively ignoring irrelevant features and focusing on the more important ones.
+
+c. Multi-collinearity: Elastic Net is also helpful in managing multi-collinearity, i.e., when there are multiple correlated features in the dataset, it is able to maintain model stability and prevent overfitting.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -44,6 +51,12 @@ plt.show()
 This code snippet demonstrates the use of Elastic Net by generating a synthetic dataset, splitting it into training and testing data, applying the Elastic Net model, and visualizing the coefficients.
 
 
+## Resources
+
+a. Scikit-learn's Elastic Net documentation: A useful resource explaining the Elastic Net model with practical examples, implemented via Python's scikit-learn library. (https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html)
+b. An Introduction to Statistical Learning: A widely-used educational resource for learning statistical and machine learning concepts, including the Elastic Net. (http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf)
+c. Elastic Net Regularization: A brief yet comprehensive blog post on Elastic Net regularization, including implementation examples with Python. (https://towardsdatascience.com/elastic-net-regularization-48014dee4c8d)
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -68,12 +81,6 @@ This code snippet demonstrates the use of Elastic Net by generating a synthetic 
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a. Scikit-learn's Elastic Net documentation: A useful resource explaining the Elastic Net model with practical examples, implemented via Python's scikit-learn library. (https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html)
-b. An Introduction to Statistical Learning: A widely-used educational resource for learning statistical and machine learning concepts, including the Elastic Net. (http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf)
-c. Elastic Net Regularization: A brief yet comprehensive blog post on Elastic Net regularization, including implementation examples with Python. (https://towardsdatascience.com/elastic-net-regularization-48014dee4c8d)
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-elastic-net
+tags: #numericaldata, #numericaldata/elasticnet

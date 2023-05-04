@@ -1,9 +1,16 @@
-#  EfficientNet
 **Model Type:**  Computer Vision Models
 **Data Type:**  Image Data
 
-**Python code **:
+## Use Cases :
 
+a. Image classification: EfficientNet can be used for classifying images into different categories or classes, such as identifying different types of animals or objects in a dataset.
+
+b. Fine-grained recognition: EfficientNet can be applied to fine-grained recognition tasks like distinguishing between different species of flowers or breeds of dogs.
+
+c. Transfer learning: EfficientNet can be used as a pre-trained model for transfer learning, where the model is fine-tuned on a specific task with limited data, such as medical image analysis or remote sensing image classification.
+
+
+## Python code: 
 
 ```python
 import tensorflow as tf
@@ -45,6 +52,12 @@ history = model.fit(train_data, train_labels, epochs=10, batch_size=32, validati
 In this code snippet, we demonstrate how to use the EfficientNetB0 architecture for a custom image classification task. The base model is loaded with pre-trained weights, and the top layer is replaced with a new dense layer for our specific task. After training the model with a custom dataset, we perform fine-tuning by unfreezing some layers of the base model and training again with a lower learning rate.
 
 
+## Resources
+
+a. Official EfficientNet GitHub repository: https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet
+b. TensorFlow Hub: Offers pre-trained EfficientNet models that can be fine-tuned for various applications: https://tfhub.dev/google/collections/efficientnet/
+c. Keras Applications: Provides built-in EfficientNet implementations in the Keras library: https://keras.io/api/applications/#available-models
+
 **See Also**:
 
 - [[ Convolutional Neural Networks (CNN)]]
@@ -58,12 +71,6 @@ In this code snippet, we demonstrate how to use the EfficientNetB0 architecture 
 - [[ StyleGAN]]
 - [[ Pix2Pix]]
 - [[ CycleGAN]]
-## Resources
-
-a. Official EfficientNet GitHub repository: https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet
-b. TensorFlow Hub: Offers pre-trained EfficientNet models that can be fine-tuned for various applications: https://tfhub.dev/google/collections/efficientnet/
-c. Keras Applications: Provides built-in EfficientNet implementations in the Keras library: https://keras.io/api/applications/#available-models
-
 
 ---
-tags: #-image-data, #-image-data/-efficientnet
+tags: #imagedata, #imagedata/efficientnet

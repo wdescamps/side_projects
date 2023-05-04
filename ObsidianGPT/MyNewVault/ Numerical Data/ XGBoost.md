@@ -1,9 +1,16 @@
-#  XGBoost
 **Model Type:**  Classification Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a. Classification Problems: XGBoost can be employed for binary or multi-class classification tasks, such as spam detection, sentiment analysis, or customer segmentation.
+
+b. Regression Problems: XGBoost can be used for linear, non-linear, or time-series regression problems, such as predicting house prices, forecasting sales, or estimating energy consumption.
+
+c. Feature Importance and Selection: XGBoost offers built-in feature importance scores, making it useful for reducing the dimensionality of high-dimensional datasets or finding the most relevant features for a given problem.
+
+
+## Python code: 
 
 ```python
 import xgboost as xgb
@@ -41,6 +48,15 @@ print("Mean Squared Error: ", mse)
 This example demonstrates how to use XGBoost for a regression problem, specifically predicting house prices in the Boston Housing dataset. The code demonstrates how to load the dataset, split it into a train and test set, instantiate the XGBRegressor model, train the model, make predictions, and evaluate the performance using the mean squared error metric.
 
 
+## Resources
+
+a. XGBoost Documentation: The official documentation provides comprehensive information on installing and using XGBoost with various interfaces (Python, R, etc.) and understanding its parameters.
+Link: https://xgboost.readthedocs.io/en/latest/index.html
+b. "Introduction to Boosted Trees," by Tianqi Chen, et al.: This research paper presents the mathematical foundations and technical details behind the XGBoost algorithm.
+Link: https://arxiv.org/abs/1603.02754
+c. "Complete Guide to Parameter Tuning in XGBoost" (Analytics Vidhya): This article discusses the importance of parameter tuning in XGBoost models and provides guidance on selecting the most relevant parameters for a particular problem.
+Link: https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -64,15 +80,6 @@ This example demonstrates how to use XGBoost for a regression problem, specifica
 - [[ Gradient Boosting Machines (GBM)]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a. XGBoost Documentation: The official documentation provides comprehensive information on installing and using XGBoost with various interfaces (Python, R, etc.) and understanding its parameters.
-Link: https://xgboost.readthedocs.io/en/latest/index.html
-b. "Introduction to Boosted Trees," by Tianqi Chen, et al.: This research paper presents the mathematical foundations and technical details behind the XGBoost algorithm.
-Link: https://arxiv.org/abs/1603.02754
-c. "Complete Guide to Parameter Tuning in XGBoost" (Analytics Vidhya): This article discusses the importance of parameter tuning in XGBoost models and provides guidance on selecting the most relevant parameters for a particular problem.
-Link: https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-xgboost
+tags: #numericaldata, #numericaldata/xgboost

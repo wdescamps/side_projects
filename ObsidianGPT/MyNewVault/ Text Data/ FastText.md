@@ -1,9 +1,16 @@
-#  FastText
 **Model Type:**  Natural Language Processing Models
 **Data Type:**  Text Data
 
-**Python code **:
+## Use Cases :
 
+a. Text classification: FastText can be applied to a wide range of text classification problems, including sentiment analysis, topic classification, language detection, and spam detection.
+
+b. Word representation learning: FastText can efficiently learn high-quality word vectors, which can be used for text similarity, analogy detection, and other natural language processing (NLP) tasks.
+
+c. Multi-label classification: FastText can handle multi-label classification problems, where a text can have multiple labels. This has applications in areas like image captioning and multi-topic text classification.
+
+
+## Python code: 
 
 In this example, we will use FastText to perform sentiment analysis on movie reviews.
 
@@ -44,6 +51,12 @@ print(model.predict("I enjoyed the movie, it was an interesting story."))
 You will get the results of the validation test along with the prediction for the new review.
 
 
+## Resources
+
+a. FastText Website: The official FastText website provides a comprehensive guide, documentation, and research papers associated with the model. (https://fasttext.cc/)
+b. FastText GitHub Repository: The GitHub repo contains the complete source code and necessary instructions for installing and using FastText. (https://github.com/facebookresearch/fastText)
+c. Tutorial on FastText: This tutorial by Facebook AI researchers provides a detailed introduction to using FastText for text classification. (https://arxiv.org/abs/1607.01759)
+
 **See Also**:
 
 - [[ Bag of Words]]
@@ -54,12 +67,6 @@ You will get the results of the validation test along with the prediction for th
 - [[ Long Short]]
 - [[ Gated Recurrent Units (GRU)]]
 - [[ Transformers (e.g., BERT, GPT, T5, RoBERTa)]]
-## Resources
-
-a. FastText Website: The official FastText website provides a comprehensive guide, documentation, and research papers associated with the model. (https://fasttext.cc/)
-b. FastText GitHub Repository: The GitHub repo contains the complete source code and necessary instructions for installing and using FastText. (https://github.com/facebookresearch/fastText)
-c. Tutorial on FastText: This tutorial by Facebook AI researchers provides a detailed introduction to using FastText for text classification. (https://arxiv.org/abs/1607.01759)
-
 
 ---
-tags: #-text-data, #-text-data/-fasttext
+tags: #textdata, #textdata/fasttext

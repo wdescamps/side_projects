@@ -1,9 +1,16 @@
-#  GloVe
 **Model Type:**  Natural Language Processing Models
 **Data Type:**  Text Data
 
-**Python code **:
+## Use Cases :
 
+a. Natural Language Processing: GloVe word embeddings are widely used in various NLP tasks like sentiment analysis, machine translation, and text classification.
+
+b. Text Similarity: By capturing the semantic meaning of words in their embeddings, GloVe can be used to calculate the similarity between words or documents.
+
+c. Text Summarization: GloVe embeddings can be utilized to extract the most relevant sentences from a document by determining the significance of each sentence based on the words' embeddings.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -31,6 +38,12 @@ print(f"Similarity between '{word1}' and '{word2}': {cosine_similarity}")
 Note: The code assumes that you have downloaded the GloVe pre-trained embeddings ("glove.6B.100d.txt") from the official website (https://nlp.stanford.edu/projects/glove/).
 
 
+## Resources
+
+a. GloVe: The official website of GloVe, containing pre-trained models and the code for training new models. (https://nlp.stanford.edu/projects/glove/)
+b. Gensim's GloVe Python Implementation: A library for training, using, and converting GloVe vectors in Python. (https://radimrehurek.com/gensim/models/keyedvectors.html)
+c. Introduction to GloVe using Python: A tutorial explaining the GloVe model, its use, and providing examples. (https://medium.com/analytics-vidhya/understanding-and-implementing-glove-word-embedding-with-example-dfcc162c0110)
+
 **See Also**:
 
 - [[ Bag of Words]]
@@ -41,12 +54,6 @@ Note: The code assumes that you have downloaded the GloVe pre-trained embeddings
 - [[ Long Short]]
 - [[ Gated Recurrent Units (GRU)]]
 - [[ Transformers (e.g., BERT, GPT, T5, RoBERTa)]]
-## Resources
-
-a. GloVe: The official website of GloVe, containing pre-trained models and the code for training new models. (https://nlp.stanford.edu/projects/glove/)
-b. Gensim's GloVe Python Implementation: A library for training, using, and converting GloVe vectors in Python. (https://radimrehurek.com/gensim/models/keyedvectors.html)
-c. Introduction to GloVe using Python: A tutorial explaining the GloVe model, its use, and providing examples. (https://medium.com/analytics-vidhya/understanding-and-implementing-glove-word-embedding-with-example-dfcc162c0110)
-
 
 ---
-tags: #-text-data, #-text-data/-glove
+tags: #textdata, #textdata/glove

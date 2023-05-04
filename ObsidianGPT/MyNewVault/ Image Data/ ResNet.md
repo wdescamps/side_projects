@@ -1,9 +1,16 @@
-#  ResNet
 **Model Type:**  Computer Vision Models
 **Data Type:**  Image Data
 
-**Python code **:
+## Use Cases :
 
+a) Image classification: Recognizing objects in images and classifying them into different categories.
+
+b) Object detection: Identifying the presence and location of objects in images or videos.
+
+c) Semantic segmentation: Identifying every pixel in an image and labeling it with a class.
+
+
+## Python code: 
 
 In this example, we will use PyTorch and a pre-trained ResNet model to classify an image:
 
@@ -57,6 +64,15 @@ if __name__ == "__main__":
 Replace "path/to/your/image.jpg" with the path to an image on your local machine to test the model.
 
 
+## Resources
+
+a) Deep Residual Networks paper: Official research paper introducing ResNet by the authors (Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun).
+Link: https://arxiv.org/abs/1512.03385
+b) TensorFlow documentation on ResNet: Official TensorFlow tutorial on building and training a ResNet model for image classification.
+Link: https://www.tensorflow.org/tutorials/images/deep_cnn_resnet
+c) PyTorch Image Models (timm): A collection of image models, layers, utilities, optimizers, and schedulers for PyTorch, which includes pretrained ResNet models.
+Link: https://github.com/rwightman/pytorch-image-models
+
 **See Also**:
 
 - [[ Convolutional Neural Networks (CNN)]]
@@ -70,15 +86,6 @@ Replace "path/to/your/image.jpg" with the path to an image on your local machine
 - [[ StyleGAN]]
 - [[ Pix2Pix]]
 - [[ CycleGAN]]
-## Resources
-
-a) Deep Residual Networks paper: Official research paper introducing ResNet by the authors (Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun).
-Link: https://arxiv.org/abs/1512.03385
-b) TensorFlow documentation on ResNet: Official TensorFlow tutorial on building and training a ResNet model for image classification.
-Link: https://www.tensorflow.org/tutorials/images/deep_cnn_resnet
-c) PyTorch Image Models (timm): A collection of image models, layers, utilities, optimizers, and schedulers for PyTorch, which includes pretrained ResNet models.
-Link: https://github.com/rwightman/pytorch-image-models
-
 
 ---
-tags: #-image-data, #-image-data/-resnet
+tags: #imagedata, #imagedata/resnet

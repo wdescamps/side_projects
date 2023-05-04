@@ -1,9 +1,16 @@
-#  CatBoost
 **Model Type:**  Classification Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a. Binary Classification: CatBoost can be used to distinguish between two classes, like determining whether a customer will make a purchase or not.
+
+b. Multiclass Classification: It can predict outcomes for multiple classes, such as classifying different species of plants based on their features.
+
+c. Regression: The CatBoost model can also be used to predict continuous numeric outcomes, such as predicting house prices based on various factors.
+
+
+## Python code: 
 
 ```python
 # Import necessary libraries
@@ -42,6 +49,15 @@ print("Accuracy: {:.2f}%".format(accuracy * 100))
 Replace 'data_file.csv' with the path of your dataset and 'target_column' with the specific column representing labels in the dataset. This code assumes that you have categorical features present in the dataset, but will also work with numeric or combined features. Don't forget to install the CatBoost library using 'pip install catboost' before running the code.
 
 
+## Resources
+
+a. CatBoost Official Documentation: This comprehensive guide covers the installation, usage, and various functionalities of CatBoost, along with examples.
+Link: (https://catboost.ai/docs/concepts/about.html)
+b. Getting Started with CatBoost: Medium Article: This blog post offers a step-by-step tutorial to implement CatBoost with Python for classification problems.
+Link: (https://medium.com/@nishan_007/getting-started-with-catboost-57582d195de)
+c. CatBoost Python Package: This is an official Resource, available via GitHub, which covers the installation of the CatBoost Python package and diverse examples to understand its application.
+Link: (https://github.com/catboost/catboost/tree/master/catboost/python-package)
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -65,15 +81,6 @@ Replace 'data_file.csv' with the path of your dataset and 'target_column' with t
 - [[ Gradient Boosting Machines (GBM)]]
 - [[ XGBoost]]
 - [[ LightGBM]]
-## Resources
-
-a. CatBoost Official Documentation: This comprehensive guide covers the installation, usage, and various functionalities of CatBoost, along with examples.
-Link: (https://catboost.ai/docs/concepts/about.html)
-b. Getting Started with CatBoost: Medium Article: This blog post offers a step-by-step tutorial to implement CatBoost with Python for classification problems.
-Link: (https://medium.com/@nishan_007/getting-started-with-catboost-57582d195de)
-c. CatBoost Python Package: This is an official Resource, available via GitHub, which covers the installation of the CatBoost Python package and diverse examples to understand its application.
-Link: (https://github.com/catboost/catboost/tree/master/catboost/python-package)
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-catboost
+tags: #numericaldata, #numericaldata/catboost

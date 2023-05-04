@@ -1,9 +1,16 @@
-#  PILCO
 **Model Type:**  Music Generation Models
 **Data Type:**  Audio Data
 
-**Python code **:
+## Use Cases :
 
+a. Robotics: PILCO can be used for teaching robots to execute complex manipulation tasks, such as grasping, pushing, and lifting objects while accommodating for environmental uncertainties
+
+b. Autonomous Vehicles: PILCO can be applied in learning optimal control policies for self-driving cars, enabling them to adapt to different traffic scenarios while considering the uncertainty in the predictions
+
+c. Game Playing: PILCO can be used for training agents to learn optimal strategies in continuous-space video games, e.g., racing, flying, or navigation tasks with uncertain dynamics
+
+
+## Python code: 
 
 Before running the code, you will need to install the GPflow and GPflowPILCO libraries:
 
@@ -72,6 +79,12 @@ for i in range(num_training_iters):
 ```
 
 
+## Resources
+
+a. PILCO: A Model-Based and Data-Efficient Approach to Policy Search - The original PILCO paper, which lays out the methodology, theory, and experiments: https://www.jmlr.org/papers/volume13/deisenroth12a/deisenroth12a.pdf
+b. GPflowPILCO - A library implementing PILCO with TensorFlow and GPflow, which is great for newer projects: https://github.com/nrontsis/PILCO
+c. pyPilco - A lightweight Python implementation of PILCO, well-suited for quick experimentation: https://github.com/sbitzer/pyPilco
+
 **See Also**:
 
 - [[ Mel Frequency Cepstral Coefficients (MFCC)]]
@@ -91,12 +104,6 @@ for i in range(num_training_iters):
 - [[ Soft Actor]]
 - [[ Model]]
 - [[ Monte Carlo Tree Search (MCTS)]]
-## Resources
-
-a. PILCO: A Model-Based and Data-Efficient Approach to Policy Search - The original PILCO paper, which lays out the methodology, theory, and experiments: https://www.jmlr.org/papers/volume13/deisenroth12a/deisenroth12a.pdf
-b. GPflowPILCO - A library implementing PILCO with TensorFlow and GPflow, which is great for newer projects: https://github.com/nrontsis/PILCO
-c. pyPilco - A lightweight Python implementation of PILCO, well-suited for quick experimentation: https://github.com/sbitzer/pyPilco
-
 
 ---
-tags: #-audio-data, #-audio-data/-pilco
+tags: #audiodata, #audiodata/pilco

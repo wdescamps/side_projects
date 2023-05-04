@@ -1,9 +1,16 @@
-#  Deep Q
 **Model Type:**  Music Generation Models
 **Data Type:**  Audio Data
 
-**Python code **:
+## Use Cases :
 
+a. Game playing: DQN gained popularity when it was successfully used to learn playing various Atari 2600 games directly from the raw pixel inputs, outperforming many previous techniques.
+
+b. Robotics: DQNs can be used to train robots to perform various tasks autonomously by learning from trial and error in simulation environments or real-world scenarios.
+
+c. Autonomous vehicles: Deep Q-Networks can be used as a part of the decision-making mechanism for autonomous vehicles, learning optimal driving policies based on the environment and traffic conditions.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -58,6 +65,12 @@ class DQN:
 This code defines a simple DQN agent using TensorFlow and Keras. The agent can be trained on a custom environment using a for loop to interact with the environment and calling the `remember`, `act`, and `replay` methods to update the model.
 
 
+## Resources
+
+a. DeepMind's DQN paper: "Human-level control through deep reinforcement learning" - The original research paper that introduced the Deep Q Network model. (https://www.nature.com/articles/nature14236)
+b. OpenAI's Spinning Up: An educational resource that provides a comprehensive understanding of reinforcement learning, including implementation guides for models like DQN. (https://spinningup.openai.com/en/latest/algorithms/dqn.html)
+c. TensorFlow & Keras Implementation: A tutorial on how to implement a Deep Q-Network using popular deep learning frameworks like TensorFlow and Keras. (https://towardsdatascience.com/creating-a-custom-openai-gym-environment-to-simulate-stock-trading-e4c91996901d)
+
 **See Also**:
 
 - [[ Mel Frequency Cepstral Coefficients (MFCC)]]
@@ -77,12 +90,6 @@ This code defines a simple DQN agent using TensorFlow and Keras. The agent can b
 - [[ Model]]
 - [[ Monte Carlo Tree Search (MCTS)]]
 - [[ PILCO]]
-## Resources
-
-a. DeepMind's DQN paper: "Human-level control through deep reinforcement learning" - The original research paper that introduced the Deep Q Network model. (https://www.nature.com/articles/nature14236)
-b. OpenAI's Spinning Up: An educational resource that provides a comprehensive understanding of reinforcement learning, including implementation guides for models like DQN. (https://spinningup.openai.com/en/latest/algorithms/dqn.html)
-c. TensorFlow & Keras Implementation: A tutorial on how to implement a Deep Q-Network using popular deep learning frameworks like TensorFlow and Keras. (https://towardsdatascience.com/creating-a-custom-openai-gym-environment-to-simulate-stock-trading-e4c91996901d)
-
 
 ---
-tags: #-audio-data, #-audio-data/-deep-q
+tags: #audiodata, #audiodata/deepq

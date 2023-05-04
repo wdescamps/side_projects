@@ -1,9 +1,16 @@
-#  Seasonal decomposition of time series (STL)
 **Model Type:**  Forecasting Models
 **Data Type:**  Time Series Data
 
-**Python code **:
+## Use Cases :
 
+a. Forecasting: STL can be used to estimate the trend and seasonal components of historical data, which can then be used to generate forecasts of future values.
+
+b. Anomaly detection: By decomposing the time series, STL can help visualize and identify unusual fluctuations in the data that might be indicative of anomalies or outliers.
+
+c. Data preprocessing: STL can be used to remove seasonality and trends from a time series, which might be necessary for the application of some machine learning algorithms that require stationary time series data as input.
+
+
+## Python code: 
 
 ```python
 import pandas as pd
@@ -35,6 +42,12 @@ plt.show()
 This code demonstrates how to perform STL decomposition on a dataset of monthly passenger airline data. It uses the statsmodels library and plots the original time series along with its decomposed trend, seasonal, and residual components.
 
 
+## Resources
+
+a. Python's statsmodels library provides a simple implementation of STL decomposition. The official documentation provides an example and explanation: https://www.statsmodels.org/stable/examples/notebooks/generated/stl_decomposition.html
+b. The book "Forecasting: principles and practice" by Rob J. Hyndman and George Athanasopoulos provides a comprehensive introduction to STL and other techniques for time series decomposition and forecasting: https://otexts.com/fpp2/stl.html
+c. This tutorial gives a step-by-step explanation of how to perform and interpret STL decomposition in Python: https://towardsdatascience.com/decompose-time-series-data-trend-seasonality-moving-average-and-a-robust-approach-bdef7c212c68
+
 **See Also**:
 
 - [[ Autoregressive Integrated Moving Average (ARIMA)]]
@@ -44,12 +57,6 @@ This code demonstrates how to perform STL decomposition on a dataset of monthly 
 - [[ Facebook Prophet]]
 - [[ LightGBM]]
 - [[ XGBoost]]
-## Resources
-
-a. Python's statsmodels library provides a simple implementation of STL decomposition. The official documentation provides an example and explanation: https://www.statsmodels.org/stable/examples/notebooks/generated/stl_decomposition.html
-b. The book "Forecasting: principles and practice" by Rob J. Hyndman and George Athanasopoulos provides a comprehensive introduction to STL and other techniques for time series decomposition and forecasting: https://otexts.com/fpp2/stl.html
-c. This tutorial gives a step-by-step explanation of how to perform and interpret STL decomposition in Python: https://towardsdatascience.com/decompose-time-series-data-trend-seasonality-moving-average-and-a-robust-approach-bdef7c212c68
-
 
 ---
-tags: #-time-series-data, #-time-series-data/-seasonal-decomposition-of-time-series-stl
+tags: #timeseriesdata, #timeseriesdata/seasonaldecompositionoftimeseriesstl

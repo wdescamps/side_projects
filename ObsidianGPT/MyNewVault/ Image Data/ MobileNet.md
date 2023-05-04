@@ -1,9 +1,16 @@
-#  MobileNet
 **Model Type:**  Computer Vision Models
 **Data Type:**  Image Data
 
-**Python code **:
+## Use Cases :
 
+a. Image Classification: MobileNet can be used for classifying images into various categories, including person, animal, object, and scene types.
+
+b. Object Detection: MobileNet can be combined with SSD (Single Shot MultiBox Detector) or other object detection frameworks to perform real-time object detection and localization in images and videos.
+
+c. Transfer Learning: Due to its lightweight architecture, MobileNet can be utilized as a feature extractor in transfer learning tasks by fine-tuning it for different target applications and domains.
+
+
+## Python code: 
 
 ```python
 import tensorflow as tf
@@ -35,6 +42,15 @@ for (_, pred_class, pred_prob) in top_preds:
 This code loads a pre-trained MobileNetV2 model from TensorFlow, preprocesses an input image, makes predictions, and displays the top 3 predicted classes along with their probabilities. Replace `'path/to/your/image.jpg'` with the path to an image file you want to classify.
 
 
+## Resources
+
+a. TensorFlow's MobileNet Guide: A detailed guide provided by TensorFlow that explains how to use MobileNet for image classification and transfer learning.
+Link: https://www.tensorflow.org/tutorials/images/classification
+b. PyTorch Hub: Contains pre-trained MobileNet models that can be used directly in PyTorch for various vision applications.
+Link: https://pytorch.org/hub/pytorch_vision_mobilenet_v2/
+c. MobileNet + SSD object detection using OpenCV: A tutorial on implementing real-time object detection using MobileNet and SSD with OpenCV.
+Link: https://www.pyimagesearch.com/2017/09/11/object-detection-with-deep-learning-and-opencv/
+
 **See Also**:
 
 - [[ Convolutional Neural Networks (CNN)]]
@@ -48,15 +64,6 @@ This code loads a pre-trained MobileNetV2 model from TensorFlow, preprocesses an
 - [[ StyleGAN]]
 - [[ Pix2Pix]]
 - [[ CycleGAN]]
-## Resources
-
-a. TensorFlow's MobileNet Guide: A detailed guide provided by TensorFlow that explains how to use MobileNet for image classification and transfer learning.
-Link: https://www.tensorflow.org/tutorials/images/classification
-b. PyTorch Hub: Contains pre-trained MobileNet models that can be used directly in PyTorch for various vision applications.
-Link: https://pytorch.org/hub/pytorch_vision_mobilenet_v2/
-c. MobileNet + SSD object detection using OpenCV: A tutorial on implementing real-time object detection using MobileNet and SSD with OpenCV.
-Link: https://www.pyimagesearch.com/2017/09/11/object-detection-with-deep-learning-and-opencv/
-
 
 ---
-tags: #-image-data, #-image-data/-mobilenet
+tags: #imagedata, #imagedata/mobilenet

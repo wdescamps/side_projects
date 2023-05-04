@@ -1,9 +1,16 @@
-#  Support Vector Regression (SVR)
 **Model Type:**  Regression Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a. Predicting Stock Prices: SVR can be used to model the relationship between various factors (e.g., historical prices, trading volume, market sentiment) and stock prices to make future price predictions.
+
+b. Medical Diagnosis: SVR can be applied to predict health outcomes or progression of diseases based on patient data and clinical measurements.
+
+c. Energy Consumption Forecasting: Utilities companies can use SVR to predict future energy consumption based on historical usage patterns, weather conditions, and demographic information, helping them better manage energy resources.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -61,6 +68,15 @@ plt.show()
 ```
 
 
+## Resources
+
+a. Scikit-learn Documentation: Official documentation of the popular machine learning library scikit-learn includes a user guide and code examples for implementing SVR.
+(https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html)
+b. Support Vector Regression with R: A step-by-step tutorial on how to implement Support Vector Regression using R programming language.
+(https://www.machinelearningplus.com/machine-learning/support-vector-regression-r/)
+c. An Introduction to Support Vector Regression (SVR) in Python: A comprehensive article that provides an introduction to SVR, along with implementation details and code examples in Python.
+(https://towardsdatascience.com/an-introduction-to-support-vector-regression-svr-a3ebc1672c2)
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -85,15 +101,6 @@ plt.show()
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a. Scikit-learn Documentation: Official documentation of the popular machine learning library scikit-learn includes a user guide and code examples for implementing SVR.
-(https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html)
-b. Support Vector Regression with R: A step-by-step tutorial on how to implement Support Vector Regression using R programming language.
-(https://www.machinelearningplus.com/machine-learning/support-vector-regression-r/)
-c. An Introduction to Support Vector Regression (SVR) in Python: A comprehensive article that provides an introduction to SVR, along with implementation details and code examples in Python.
-(https://towardsdatascience.com/an-introduction-to-support-vector-regression-svr-a3ebc1672c2)
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-support-vector-regression-svr
+tags: #numericaldata, #numericaldata/supportvectorregressionsvr

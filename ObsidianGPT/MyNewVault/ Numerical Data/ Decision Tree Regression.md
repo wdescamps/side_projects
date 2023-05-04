@@ -1,9 +1,16 @@
-#  Decision Tree Regression
 **Model Type:**  Regression Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a. Predicting housing prices based on features like area, number of rooms, location, and age of the property.
+
+b. Forecasting sales and demand for products based on aspects like seasonality, promotions, and competition.
+
+c. Estimating energy consumption in a building based on factors like outdoor temperature, number of occupants, and time of day.
+
+
+## Python code: 
 
 ```python
 import pandas as pd
@@ -34,6 +41,15 @@ print("Mean Squared Error:", mse)
 This code snippet demonstrates how to use the DecisionTreeRegressor class from the scikit-learn library to predict housing prices from a dataset. The data is loaded, split into train and test sets, and then used to train and evaluate the model. The resulting mean squared error is printed to evaluate the model's performance.
 
 
+## Resources
+
+a. Scikit-learn Documentation: This comprehensive guide provides an overview of Decision Tree Regression using the popular Python library scikit-learn.
+Link: https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html
+b. "Python Machine Learning" by Sebastian Raschka: This book provides a clear and comprehensive explanation of Decision Tree Regression, including practical examples using Python.
+Link: https://link.springer.com/book/10.1007%2F978-3-319-63913-0
+c. Kaggle Tutorials: Kaggle offers several tutorials and competitions that involve implementing Decision Tree Regression models to solve real-world problems.
+Link: https://www.kaggle.com/learn/intro-to-machine-learning
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -58,15 +74,6 @@ This code snippet demonstrates how to use the DecisionTreeRegressor class from t
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a. Scikit-learn Documentation: This comprehensive guide provides an overview of Decision Tree Regression using the popular Python library scikit-learn.
-Link: https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html
-b. "Python Machine Learning" by Sebastian Raschka: This book provides a clear and comprehensive explanation of Decision Tree Regression, including practical examples using Python.
-Link: https://link.springer.com/book/10.1007%2F978-3-319-63913-0
-c. Kaggle Tutorials: Kaggle offers several tutorials and competitions that involve implementing Decision Tree Regression models to solve real-world problems.
-Link: https://www.kaggle.com/learn/intro-to-machine-learning
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-decision-tree-regression
+tags: #numericaldata, #numericaldata/decisiontreeregression

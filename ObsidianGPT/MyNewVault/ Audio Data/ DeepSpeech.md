@@ -1,9 +1,16 @@
-#  DeepSpeech
 **Model Type:**  Hidden Markov Models (HMM)
 **Data Type:**  Audio Data
 
-**Python code **:
+## Use Cases :
 
+a) Transcription Services: DeepSpeech can be employed to create transcription services that convert audio or video data, like interviews, meetings, or conference calls into text, enhancing accessibility and data usability.
+
+b) Voice Assistants: The model can be integrated into smart voice assistants for natural language understanding and controlling IoT devices in a hands-free manner, catering to various personal and professional tasks.
+
+c) Subtitles and Closed Captions: DeepSpeech can be utilized to automatically generate subtitles and closed captions for video content, enriching the user experience and improving accessibility for the deaf and hard-of-hearing communities.
+
+
+## Python code: 
 
 ```python
 import deepspeech
@@ -43,6 +50,15 @@ print("Transcript: ", result)
 Note: Before running the code, make sure to download the pre-trained model and scorer files from Mozilla's GitHub repository (https://github.com/mozilla/DeepSpeech/releases/tag/v0.9.3), and replace the model_file and scorer_file variables with the appropriate paths. Also, replace the audio_file variable with the path to the desired audio file. To install the deepspeech package, run "pip install deepspeech" in your terminal.
 
 
+## Resources
+
+a) Mozilla's GitHub Repository: This repository offers pre-trained models, code resources, and a comprehensive guide for using and understanding the DeepSpeech model.
+Link: https://github.com/mozilla/DeepSpeech
+b) Mozilla's DeepSpeech Documentation: Detailed documentation provided by the Mozilla team on how to install, use, and train the model.
+Link: https://deepspeech.readthedocs.io/en/latest/
+c) DeepSpeech Python Package: This Python package offers quick installation and effortless usage of the pre-trained DeepSpeech model.
+Link: https://pypi.org/project/deepspeech/
+
 **See Also**:
 
 - [[ Mel Frequency Cepstral Coefficients (MFCC)]]
@@ -62,15 +78,6 @@ Note: Before running the code, make sure to download the pre-trained model and s
 - [[ Model]]
 - [[ Monte Carlo Tree Search (MCTS)]]
 - [[ PILCO]]
-## Resources
-
-a) Mozilla's GitHub Repository: This repository offers pre-trained models, code resources, and a comprehensive guide for using and understanding the DeepSpeech model.
-Link: https://github.com/mozilla/DeepSpeech
-b) Mozilla's DeepSpeech Documentation: Detailed documentation provided by the Mozilla team on how to install, use, and train the model.
-Link: https://deepspeech.readthedocs.io/en/latest/
-c) DeepSpeech Python Package: This Python package offers quick installation and effortless usage of the pre-trained DeepSpeech model.
-Link: https://pypi.org/project/deepspeech/
-
 
 ---
-tags: #-audio-data, #-audio-data/-deepspeech
+tags: #audiodata, #audiodata/deepspeech

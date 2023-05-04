@@ -1,9 +1,16 @@
-#  Naive Bayes
 **Model Type:**  Classification Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a) Spam filtering: Naive Bayes is widely used in email spam filters to classify emails as spam or not spam by analyzing the content and other features of emails.
+
+b) Sentiment analysis: Naive Bayes can be used to classify the sentiment of text data such as movie reviews, tweets, or product reviews as positive, negative, or neutral based on the words and their frequencies in the text.
+
+c) Document classification: Naive Bayes can be used to categorize documents, web pages, or news articles into predefined categories based on their content, such as sports, politics, business, etc.
+
+
+## Python code: 
 
 ```python
 import nltk
@@ -38,6 +45,15 @@ print("Accuracy:", accuracy)
 This code demonstrates the use of the Naive Bayes model for classifying the documents in the 20 Newsgroups dataset. The Scikit-Learn library is used to vectorize the text data and train a Multinomial Naive Bayes classifier. The accuracy of the model on the test set is then calculated and printed.
 
 
+## Resources
+
+a) Scikit-Learn Naive Bayes documentation: https://scikit-learn.org/stable/modules/naive_bayes.html
+This link provides an overview of the Naive Bayes implementation in the Scikit-Learn library, a popular machine learning library in Python.
+b) Naive Bayes Classifier from Scratch: https://machinelearningmastery.com/naive-bayes-classifier-scratch-python/
+This tutorial explains how to implement a Naive Bayes classifier from scratch in Python, which can be a useful exercise in understanding the detailed workings of the algorithm.
+c) Text classification using Naive Bayes: https://towardsdatascience.com/text-classification-using-naive-bayes-classifier-fd7fbd077558
+This tutorial explains how to perform text classification using the Naive Bayes classifier, with example code and an explanation of the preprocessing steps required for text data.
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -62,15 +78,6 @@ This code demonstrates the use of the Naive Bayes model for classifying the docu
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a) Scikit-Learn Naive Bayes documentation: https://scikit-learn.org/stable/modules/naive_bayes.html
-This link provides an overview of the Naive Bayes implementation in the Scikit-Learn library, a popular machine learning library in Python.
-b) Naive Bayes Classifier from Scratch: https://machinelearningmastery.com/naive-bayes-classifier-scratch-python/
-This tutorial explains how to implement a Naive Bayes classifier from scratch in Python, which can be a useful exercise in understanding the detailed workings of the algorithm.
-c) Text classification using Naive Bayes: https://towardsdatascience.com/text-classification-using-naive-bayes-classifier-fd7fbd077558
-This tutorial explains how to perform text classification using the Naive Bayes classifier, with example code and an explanation of the preprocessing steps required for text data.
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-naive-bayes
+tags: #numericaldata, #numericaldata/naivebayes

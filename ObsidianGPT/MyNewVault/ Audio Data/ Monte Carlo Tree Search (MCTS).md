@@ -1,9 +1,16 @@
-#  Monte Carlo Tree Search (MCTS)
 **Model Type:**  Music Generation Models
 **Data Type:**  Audio Data
 
-**Python code **:
+## Use Cases :
 
+a. Game playing: MCTS has been used extensively in computer game playing, particularly in board games like Go, Chess, and Hex, where the state space is large and it can find good moves without exhaustive search.
+
+b. Planning and optimization: MCTS can be applied to stochastic optimization problems, such as robot motion planning, job scheduling, and vehicle routing, where the objective is generated randomly, and the algorithm must explore an unknown landscape.
+
+c. Artificial intelligence research: MCTS shows promise in the field of AI systems that can learn to succeed in complex environments, and it has been used in reinforcement learning, neural networks, and multi-agent systems research.
+
+
+## Python code: 
 
 In this example, we'll use the 'MCTS' Python library linked earlier to implement MCTS for the game of Tic-Tac-Toe.
 
@@ -77,6 +84,15 @@ if __name__ == "__main__":
 This code defines a simple `TicTacToe` class representing the game state and implements the necessary MCTS interface. Then, we define the `mcts_tictactoe_playout` function, where the actual MCTS algorithm is applied to find the best action for the current game state. Finally, we sample a Tic-Tac-Toe state and invoke MCTS to find the best move.
 
 
+## Resources
+
+a. A Survey of Monte Carlo Tree Search Methods: A thorough overview of MCTS techniques and their applications, along with theoretical foundations.
+Link: http://mcts.ai/pubs/mcts-survey-master.pdf
+b. MCTS for Dummies: A simple, step-by-step tutorial on understanding and implementing MCTS.
+Link: https://jeffbradberry.com/posts/2015/09/intro-to-monte-carlo-tree-search/
+c. Python MCTS implementation: A Python library for MCTS that can be used as a starting point for implementing the algorithm.
+Link: https://github.com/pbsinclair42/MCTS
+
 **See Also**:
 
 - [[ Mel Frequency Cepstral Coefficients (MFCC)]]
@@ -96,15 +112,6 @@ This code defines a simple `TicTacToe` class representing the game state and imp
 - [[ Soft Actor]]
 - [[ Model]]
 - [[ PILCO]]
-## Resources
-
-a. A Survey of Monte Carlo Tree Search Methods: A thorough overview of MCTS techniques and their applications, along with theoretical foundations.
-Link: http://mcts.ai/pubs/mcts-survey-master.pdf
-b. MCTS for Dummies: A simple, step-by-step tutorial on understanding and implementing MCTS.
-Link: https://jeffbradberry.com/posts/2015/09/intro-to-monte-carlo-tree-search/
-c. Python MCTS implementation: A Python library for MCTS that can be used as a starting point for implementing the algorithm.
-Link: https://github.com/pbsinclair42/MCTS
-
 
 ---
-tags: #-audio-data, #-audio-data/-monte-carlo-tree-search-mcts
+tags: #audiodata, #audiodata/montecarlotreesearchmcts

@@ -1,9 +1,16 @@
-#  Autoencoders
 **Model Type:**  Dimensionality Reduction Models
 **Data Type:**  Unstructured Data
 
-**Python code **:
+## Use Cases :
 
+a. Data compression: Autoencoders can learn to compress the input data into a lower-dimensional representation, reducing the storage and computational requirements.
+
+b. Anomaly detection: By learning the underlying structure of the data, autoencoders can detect instances that deviate from this structure, helping to identify anomalies or outliers in the dataset.
+
+c. Denoising: By learning to generate clean outputs from noisy inputs, autoencoders can help denoise and improve the quality of input data.
+
+
+## Python code: 
 
 Here is a simple example using the Keras library to create an autoencoder for the MNIST dataset:
 
@@ -80,6 +87,15 @@ plt.show()
 This example shows the process of defining, training, and using an autoencoder for the MNIST dataset. The code also includes visualization of the reconstructed images, which highlights the effectiveness of the autoencoder in capturing the main features of the input data.
 
 
+## Resources
+
+a. Keras Autoencoder tutorial by Francois Chollet, the creator of Keras:
+https://blog.keras.io/building-autoencoders-in-keras.html
+b. Autoencoders in TensorFlow tutorial:
+https://www.tensorflow.org/tutorials/generative/autoencoder
+c. Python Data Science Handbook's chapter on unsupervised learning, which includes a section on autoencoders:
+https://jakevdp.github.io/PythonDataScienceHandbook/05.00-machine-learning.html
+
 **See Also**:
 
 - [[ K]]
@@ -90,15 +106,6 @@ This example shows the process of defining, training, and using an autoencoder f
 - [[ Linear Discriminant Analysis (LDA)]]
 - [[ t]]
 - [[ Uniform Manifold Approximation and Projection (UMAP)]]
-## Resources
-
-a. Keras Autoencoder tutorial by Francois Chollet, the creator of Keras:
-https://blog.keras.io/building-autoencoders-in-keras.html
-b. Autoencoders in TensorFlow tutorial:
-https://www.tensorflow.org/tutorials/generative/autoencoder
-c. Python Data Science Handbook's chapter on unsupervised learning, which includes a section on autoencoders:
-https://jakevdp.github.io/PythonDataScienceHandbook/05.00-machine-learning.html
-
 
 ---
-tags: #-unstructured-data, #-unstructured-data/-autoencoders
+tags: #unstructureddata, #unstructureddata/autoencoders

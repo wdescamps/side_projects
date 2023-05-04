@@ -1,9 +1,16 @@
-#  Decision Trees
 **Model Type:**  Classification Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a) Classification: Decision Trees can be applied to problems like customer churn prediction, spam detection, or medical diagnosis, where the objective is to classify the data into different categories.
+
+b) Regression: For continuous target variables, Decision Trees can be used to predict house prices, stock prices, or energy consumption, among other things.
+
+c) Feature Selection: Decision Trees can be used to rank the importance of input features in a dataset, which is useful when selecting a subset of features for building more complex models.
+
+
+## Python code: 
 ```python
 import numpy as np
 import pandas as pd
@@ -42,6 +49,15 @@ print("Accuracy:", accuracy)
 This code demonstrates the use of a Decision Tree model for classification on the well-known Iris dataset. It uses the scikit-learn library for loading the dataset, splitting the data, creating the classifier, and measuring the model's accuracy. The model's maximum depth is set to 3 to limit the complexity of the tree.
 
 
+## Resources
+
+a) Scikit-learn's documentation offers an excellent introduction to Decision Trees with code examples and explanations on how to use the model for decision-making:
+https://scikit-learn.org/stable/modules/tree.html
+b) A comprehensive blog post by Towards Data Science that covers various aspects of Decision Trees, including the basics, CART algorithm, Gini impurity, and more:
+https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052
+c) A tutorial on implementing Decision Trees using Python by Analytics Vidhya, with hands-on examples and visualization of trees:
+https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -66,15 +82,6 @@ This code demonstrates the use of a Decision Tree model for classification on th
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a) Scikit-learn's documentation offers an excellent introduction to Decision Trees with code examples and explanations on how to use the model for decision-making:
-https://scikit-learn.org/stable/modules/tree.html
-b) A comprehensive blog post by Towards Data Science that covers various aspects of Decision Trees, including the basics, CART algorithm, Gini impurity, and more:
-https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052
-c) A tutorial on implementing Decision Trees using Python by Analytics Vidhya, with hands-on examples and visualization of trees:
-https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-decision-trees
+tags: #numericaldata, #numericaldata/decisiontrees

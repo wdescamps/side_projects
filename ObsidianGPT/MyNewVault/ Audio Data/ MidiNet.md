@@ -1,9 +1,16 @@
-#  MidiNet
 **Model Type:**  Music Generation Models
 **Data Type:**  Audio Data
 
-**Python code **:
+## Use Cases :
 
+a. Music Composition: MidiNet can be used by musicians and composers to generate new ideas or create entire musical pieces based on their MIDI inputs.
+
+b. Automatic Music Generation: MidiNet can be used in applications that require automatic generation of background music, such as video games, movies, and other multimedia content.
+
+c. Music Education: People learning composition or music theory can use MidiNet to study generated music, examining the patterns and structures in the output and enhancing their understanding of musical concepts.
+
+
+## Python code: 
 
 To demonstrate the MidiNet model, we'll use MuseGAN library. Make sure to install the required packages:
 
@@ -54,6 +61,15 @@ multitrack.write(os.path.join(SAMPLES_DIR, 'generated.mid'))
 The output will be a new MIDI file called "generated.mid" that contains the generated music. Note that you'll need to update the `CHECKPOINT_DIR`, `SAMPLES_DIR`, and `CONFIGS` variables to point to the appropriate directories and files for the MuseGAN model.
 
 
+## Resources
+
+a. MidiNet: A convolutional GAN for symbolic-domain music generation (Original Paper): This is the research paper that first introduced the MidiNet model, providing an in-depth understanding of the network architecture and the methods used for training the GAN.
+Link: https://arxiv.org/abs/1703.10847
+b. MuseGAN: A Python library that provides an implementation of the MidiNet model. This library is helpful for implementing and customizing MidiNet and provides comprehensive documentation on how to use it.
+Link: https://github.com/salu133445/musegan
+c. GANs for Music Generation: An overview of MidiNet and other GAN-based models for generating music. This blog post provides a broader understanding of GANs in music and the motivation behind creating MidiNet.
+Link: https://medium.com/@sdoshi579/gans-for-music-generation-papers-and-implementations-f8ce59ff46f2
+
 **See Also**:
 
 - [[ Mel Frequency Cepstral Coefficients (MFCC)]]
@@ -73,15 +89,6 @@ The output will be a new MIDI file called "generated.mid" that contains the gene
 - [[ Model]]
 - [[ Monte Carlo Tree Search (MCTS)]]
 - [[ PILCO]]
-## Resources
-
-a. MidiNet: A convolutional GAN for symbolic-domain music generation (Original Paper): This is the research paper that first introduced the MidiNet model, providing an in-depth understanding of the network architecture and the methods used for training the GAN.
-Link: https://arxiv.org/abs/1703.10847
-b. MuseGAN: A Python library that provides an implementation of the MidiNet model. This library is helpful for implementing and customizing MidiNet and provides comprehensive documentation on how to use it.
-Link: https://github.com/salu133445/musegan
-c. GANs for Music Generation: An overview of MidiNet and other GAN-based models for generating music. This blog post provides a broader understanding of GANs in music and the motivation behind creating MidiNet.
-Link: https://medium.com/@sdoshi579/gans-for-music-generation-papers-and-implementations-f8ce59ff46f2
-
 
 ---
-tags: #-audio-data, #-audio-data/-midinet
+tags: #audiodata, #audiodata/midinet

@@ -1,9 +1,16 @@
-#  t
 **Model Type:**  Dimensionality Reduction Models
 **Data Type:**  Unstructured Data
 
-**Python code **:
+## Use Cases :
 
+a. Hypothesis testing: The t-distribution is used in the Student's t-test to determine if there is a significant difference between two independent sample means.
+
+b. Confidence intervals: It's used to construct confidence intervals for small samples, specifically when the population variance is unknown.
+
+c. Regression analysis: The t-distribution helps assess the statistical significance of regression coefficients in linear regression models when sample sizes are small or population variances are unknown.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -33,6 +40,12 @@ print("Critical Value:", critical_value)
 ```
 
 
+## Resources
+
+a. An Overview of the T Distribution (Stat Trek, Online Tutorial): [https://stattrek.com/probability-distributions/t-distribution.aspx](https://stattrek.com/probability-distributions/t-distribution.aspx)
+b. Student’s t-Distribution (Wikipedia): [https://en.wikipedia.org/wiki/Student%27s_t-distribution](https://en.wikipedia.org/wiki/Student%27s_t-distribution)
+c. Introduction to the t Distributions (Math Is Fun): [https://www.mathsisfun.com/data/t-distribution.html](https://www.mathsisfun.com/data/t-distribution.html)
+
 **See Also**:
 
 - [[ K]]
@@ -43,12 +56,6 @@ print("Critical Value:", critical_value)
 - [[ Linear Discriminant Analysis (LDA)]]
 - [[ Uniform Manifold Approximation and Projection (UMAP)]]
 - [[ Autoencoders]]
-## Resources
-
-a. An Overview of the T Distribution (Stat Trek, Online Tutorial): [https://stattrek.com/probability-distributions/t-distribution.aspx](https://stattrek.com/probability-distributions/t-distribution.aspx)
-b. Student’s t-Distribution (Wikipedia): [https://en.wikipedia.org/wiki/Student%27s_t-distribution](https://en.wikipedia.org/wiki/Student%27s_t-distribution)
-c. Introduction to the t Distributions (Math Is Fun): [https://www.mathsisfun.com/data/t-distribution.html](https://www.mathsisfun.com/data/t-distribution.html)
-
 
 ---
-tags: #-unstructured-data, #-unstructured-data/-t
+tags: #unstructureddata, #unstructureddata/t

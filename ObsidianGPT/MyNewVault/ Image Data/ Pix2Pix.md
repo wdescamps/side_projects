@@ -1,9 +1,16 @@
-#  Pix2Pix
 **Model Type:**  Image Generation Models
 **Data Type:**  Image Data
 
-**Python code **:
+## Use Cases :
 
+a. Image colorization: Transforming black and white images into colored versions by learning color patterns from colored examples.
+
+b. Style transfer: Applying an artistic style (e.g., Van Gogh's Starry Night) to another image, creating an artistic rendition of the image.
+
+c. Satellite-to-map translation: Converting satellite images into map-like structures, allowing for automated map generation.
+
+
+## Python code: 
 Here's an example using TensorFlow, building upon the TensorFlow Pix2Pix tutorial:
 
 ```python
@@ -148,6 +155,12 @@ fit(train_dataset, EPOCHS, test_dataset)
 ```
 
 
+## Resources
+
+a. Original Pix2Pix research paper: https://arxiv.org/abs/1611.07004
+b. Tensorflow Pix2Pix tutorial: https://www.tensorflow.org/tutorials/generative/pix2pix
+c. PyTorch implementation of Pix2Pix: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+
 **See Also**:
 
 - [[ Convolutional Neural Networks (CNN)]]
@@ -161,12 +174,6 @@ fit(train_dataset, EPOCHS, test_dataset)
 - [[ Generative Adversarial Networks (GAN)]]
 - [[ StyleGAN]]
 - [[ CycleGAN]]
-## Resources
-
-a. Original Pix2Pix research paper: https://arxiv.org/abs/1611.07004
-b. Tensorflow Pix2Pix tutorial: https://www.tensorflow.org/tutorials/generative/pix2pix
-c. PyTorch implementation of Pix2Pix: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
-
 
 ---
-tags: #-image-data, #-image-data/-pix2pix
+tags: #imagedata, #imagedata/pix2pix

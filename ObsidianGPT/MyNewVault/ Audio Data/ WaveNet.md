@@ -1,9 +1,16 @@
-#  WaveNet
 **Model Type:**  Music Generation Models
 **Data Type:**  Audio Data
 
-**Python code **:
+## Use Cases :
 
+a. Text-to-Speech (TTS) systems: WaveNet can be used to improve speech synthesis by generating natural, human-like voices, as demonstrated in Google Assistant and Google Cloud Text-to-Speech API.
+
+b. Music generation: WaveNet can generate high-quality music samples by learning from a given dataset of instrumental music.
+
+c. Audio denoising and compression: WaveNet's capability to generate coherent audio signals can be leveraged for denoising and compression tasks in audio processing and synthesis.
+
+
+## Python code: 
 
 ```python
 # Note that this code assumes you have installed the tensorflow-wavenet implementation
@@ -47,6 +54,12 @@ generate_audio_from_condition(condition_data, checkpoint_file, output_file)
 Keep in mind that WaveNet can be computationally heavy, and the sample code above might require adjustments depending on your specific use case and data.
 
 
+## Resources
+
+a. WaveNet official research paper: This is the original research paper from DeepMind that explains the WaveNet model in-depth. (https://arxiv.org/abs/1609.03499)
+b. Fast-WaveNet: An efficient implementation of WaveNet, Fast-WaveNet speeds up the generation process through a fast inverse autoregressive flow. (https://github.com/tomlepaine/fast-wavenet)
+c. TensorFlow-WaveNet: An open-source TensorFlow implementation of WaveNet for faster training on GPUs. (https://github.com/ibab/tensorflow-wavenet)
+
 **See Also**:
 
 - [[ Mel Frequency Cepstral Coefficients (MFCC)]]
@@ -66,12 +79,6 @@ Keep in mind that WaveNet can be computationally heavy, and the sample code abov
 - [[ Model]]
 - [[ Monte Carlo Tree Search (MCTS)]]
 - [[ PILCO]]
-## Resources
-
-a. WaveNet official research paper: This is the original research paper from DeepMind that explains the WaveNet model in-depth. (https://arxiv.org/abs/1609.03499)
-b. Fast-WaveNet: An efficient implementation of WaveNet, Fast-WaveNet speeds up the generation process through a fast inverse autoregressive flow. (https://github.com/tomlepaine/fast-wavenet)
-c. TensorFlow-WaveNet: An open-source TensorFlow implementation of WaveNet for faster training on GPUs. (https://github.com/ibab/tensorflow-wavenet)
-
 
 ---
-tags: #-audio-data, #-audio-data/-wavenet
+tags: #audiodata, #audiodata/wavenet

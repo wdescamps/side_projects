@@ -1,9 +1,16 @@
-#  Variational Autoencoders (VAE)
 **Model Type:**  Image Generation Models
 **Data Type:**  Image Data
 
-**Python code **:
+## Use Cases :
 
+a) Image generation and synthesis: VAEs can be used to generate realistic new images similar to a given dataset. This has applications in the field of computer vision, such as data augmentation, image inpainting, and style transfer.
+
+b) Anomaly detection: VAEs can be used to model the distribution of normal data points and therefore identify outliers or anomalies by measuring how likely a given data point is under the learned distribution.
+
+c) Dimensionality reduction and feature extraction: VAEs can be utilized to learn a compact and meaningful low-dimensional representation of high-dimensional input data, which can then be used for tasks like visualization or downstream classification and regression tasks.
+
+
+## Python code: 
 
 Here's an example using the Keras library for the implementation of a simple Variational Autoencoder:
 
@@ -67,6 +74,15 @@ vae.fit(x_train, x_train, shuffle=True, epochs=epochs, batch_size=batch_size, va
 In this example, a simple VAE is trained on the MNIST dataset for digit generation. The encoder and decoder networks are both implemented as single-layer neural networks. The VAE loss function combines the reconstruction loss (binary cross-entropy) and the KL-divergence to enforce the Gaussian prior on the latent space.
 
 
+## Resources
+
+a) Variational Autoencoder (VAE) tutorial: This in-depth tutorial by Jaan Altosaar provides a thorough introduction to VAEs, including the theory, implementation, and visualization using TensorFlow.
+Link: https://jaan.io/what-is-variational-autoencoder-vae-tutorial/
+b) The original VAE research paper by Kingma and Welling: This research paper first introduced Variational Autoencoders, providing the mathematical foundation and experimental results.
+Link: https://arxiv.org/abs/1312.6114
+c) Tensorflow VAE implementation: This is an official TensorFlow implementation of Variational Autoencoders using the TensorFlow library.
+Link: https://www.tensorflow.org/tutorials/generative/cvae
+
 **See Also**:
 
 - [[ Convolutional Neural Networks (CNN)]]
@@ -80,15 +96,6 @@ In this example, a simple VAE is trained on the MNIST dataset for digit generati
 - [[ StyleGAN]]
 - [[ Pix2Pix]]
 - [[ CycleGAN]]
-## Resources
-
-a) Variational Autoencoder (VAE) tutorial: This in-depth tutorial by Jaan Altosaar provides a thorough introduction to VAEs, including the theory, implementation, and visualization using TensorFlow.
-Link: https://jaan.io/what-is-variational-autoencoder-vae-tutorial/
-b) The original VAE research paper by Kingma and Welling: This research paper first introduced Variational Autoencoders, providing the mathematical foundation and experimental results.
-Link: https://arxiv.org/abs/1312.6114
-c) Tensorflow VAE implementation: This is an official TensorFlow implementation of Variational Autoencoders using the TensorFlow library.
-Link: https://www.tensorflow.org/tutorials/generative/cvae
-
 
 ---
-tags: #-image-data, #-image-data/-variational-autoencoders-vae
+tags: #imagedata, #imagedata/variationalautoencodersvae

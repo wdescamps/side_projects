@@ -1,9 +1,16 @@
-#  Bag of Words
 **Model Type:**  Natural Language Processing Models
 **Data Type:**  Text Data
 
-**Python code **:
+## Use Cases :
 
+a. Spam filtering - Identifying spam emails/messages based on the occurrence of certain words in emails or messages.
+
+b. Sentiment analysis - Classifying the sentiment of a given text (positive, negative, or neutral) based on the frequency of specific words associated with sentiments.
+
+c. Document classification - Categorizing documents into topics or groups based on common terms.
+
+
+## Python code: 
 
 ```python
 from sklearn.feature_extraction.text import CountVectorizer
@@ -38,6 +45,15 @@ Feature matrix:
 ```
 
 
+## Resources
+
+a. Sklearn documentation for CountVectorizer:
+https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html
+b. A step-by-step guide to implementing the Bag of Words model in Python:
+https://machinelearningmastery.com/gentle-introduction-bag-words-model/
+c. Introduction to Bag of Words tutorial by TowardsDataScience:
+https://towardsdatascience.com/introduction-to-bag-of-words-model-31e9aca5fb11
+
 **See Also**:
 
 - [[ TF]]
@@ -48,15 +64,6 @@ Feature matrix:
 - [[ Long Short]]
 - [[ Gated Recurrent Units (GRU)]]
 - [[ Transformers (e.g., BERT, GPT, T5, RoBERTa)]]
-## Resources
-
-a. Sklearn documentation for CountVectorizer:
-https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html
-b. A step-by-step guide to implementing the Bag of Words model in Python:
-https://machinelearningmastery.com/gentle-introduction-bag-words-model/
-c. Introduction to Bag of Words tutorial by TowardsDataScience:
-https://towardsdatascience.com/introduction-to-bag-of-words-model-31e9aca5fb11
-
 
 ---
-tags: #-text-data, #-text-data/-bag-of-words
+tags: #textdata, #textdata/bagofwords

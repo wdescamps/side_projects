@@ -1,9 +1,16 @@
-#  Inception
 **Model Type:**  Computer Vision Models
 **Data Type:**  Image Data
 
-**Python code **:
+## Use Cases :
 
+a. Image classification: Recognizing and categorizing different objects in images, e.g., classifying animals, vehicles, plants, etc.
+
+b. Object detection: Identifying the presence and location of multiple objects in a single image, e.g., detecting cars, pedestrians, and traffic signs in autonomous driving systems.
+
+c. Facial recognition: Detecting and identifying faces to perform tasks such as unlocking smartphones, recognizing individuals in security systems, or classifying facial expressions in applications.
+
+
+## Python code: 
 
 ```
 import torch
@@ -40,6 +47,12 @@ print(f"Predicted class index: {predicted_class_idx}")
 This code example loads a pre-trained Inception V3 model using the PyTorch library and performs image classification on a given input image. Note that you'll need to replace "path/to/your/image.jpg" with the actual path of an image you want to classify.
 
 
+## Resources
+
+a. The original research paper for Inception model (also known as GoogLeNet): https://arxiv.org/abs/1409.4842
+b. TensorFlow tutorial on image classification using Inception: https://www.tensorflow.org/tutorials/images/classification
+c. PyTorch implementation of the Inception model: https://github.com/pytorch/vision/blob/master/torchvision/models/inception.py
+
 **See Also**:
 
 - [[ Convolutional Neural Networks (CNN)]]
@@ -53,12 +66,6 @@ This code example loads a pre-trained Inception V3 model using the PyTorch libra
 - [[ StyleGAN]]
 - [[ Pix2Pix]]
 - [[ CycleGAN]]
-## Resources
-
-a. The original research paper for Inception model (also known as GoogLeNet): https://arxiv.org/abs/1409.4842
-b. TensorFlow tutorial on image classification using Inception: https://www.tensorflow.org/tutorials/images/classification
-c. PyTorch implementation of the Inception model: https://github.com/pytorch/vision/blob/master/torchvision/models/inception.py
-
 
 ---
-tags: #-image-data, #-image-data/-inception
+tags: #imagedata, #imagedata/inception

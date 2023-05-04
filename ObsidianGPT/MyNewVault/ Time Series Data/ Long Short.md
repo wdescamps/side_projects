@@ -1,9 +1,16 @@
-#  Long Short
 **Model Type:**  Exponential Smoothing State Space Models (ETS)
 **Data Type:**  Time Series Data
 
-**Python code **:
+## Use Cases :
 
+- Market-neutral investing: The Long-Short model can be used to construct a portfolio where the net market exposure is close to zero, allowing investors to profit regardless of overall market conditions.
+
+- Factor investing: The Long-Short model can be based on factors such as quality, value, growth, or momentum which allow investors to determine the stocks that they want to long or short based on their correlation with these factors.
+
+- Algorithmic trading: The Long-Short model can be implemented using machine learning or algorithmic models to systematically identify profitable long and short positions and adjust the portfolio dynamically.
+
+
+## Python code: 
 
 ```python
 import pandas as pd
@@ -41,6 +48,12 @@ plt.show()
 This code demonstrates a simple Long-Short model using Python with yfinance for stock data, where the stocks are ranked based on their mean return minus their standard deviation, and the normalized ranking scores are used as the weights for the positions. This model can be further extended to include other factors and strategies, depending on the user's goals and preferences.
 
 
+## Resources
+
+- Investopedia: Offers an introduction to the Long-Short model and the concept of market neutrality (https://www.investopedia.com/terms/l/long-shortequity.asp)
+- QuantInsti: Learn how to implement a Long-Short strategy using Python (https://blog.quantinsti.com/long-short-equity/)
+- Seeking Alpha: An overview of various Long-Short strategies and their applications (https://seekingalpha.com/article/4403698-long-or-short-equity-strategies)
+
 **See Also**:
 
 - [[ Autoregressive Integrated Moving Average (ARIMA)]]
@@ -50,12 +63,6 @@ This code demonstrates a simple Long-Short model using Python with yfinance for 
 - [[ Facebook Prophet]]
 - [[ LightGBM]]
 - [[ XGBoost]]
-## Resources
-
-- Investopedia: Offers an introduction to the Long-Short model and the concept of market neutrality (https://www.investopedia.com/terms/l/long-shortequity.asp)
-- QuantInsti: Learn how to implement a Long-Short strategy using Python (https://blog.quantinsti.com/long-short-equity/)
-- Seeking Alpha: An overview of various Long-Short strategies and their applications (https://seekingalpha.com/article/4403698-long-or-short-equity-strategies)
-
 
 ---
-tags: #-time-series-data, #-time-series-data/-long-short
+tags: #timeseriesdata, #timeseriesdata/longshort

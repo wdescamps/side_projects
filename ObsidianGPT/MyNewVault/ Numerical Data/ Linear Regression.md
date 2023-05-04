@@ -1,9 +1,16 @@
-#  Linear Regression
 **Model Type:**  Regression Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a. Sales Forecasting: Linear regression can be used to predict future sales based on historical data, such as advertising spend, customer demographics, or seasonality.
+
+b. Pricing Optimization: Businesses can use linear regression to understand how price changes impact demand and optimize the pricing strategy accordingly.
+
+c. Risk Assessment: Linear regression can help evaluate risk factors in finance, insurance, or healthcare industries, where understanding the relationships between different factors is crucial for decision-making.
+
+
+## Python code: 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -44,6 +51,12 @@ plt.show()
 This code demonstrates how to create and evaluate a Linear Regression model using Python's Scikit-learn library, using a simple example dataset. The code generates a plot of the resulting regression line alongside the dependent variable.
 
 
+## Resources
+
+a. Scikit-Learn Documentation for Linear Regression: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
+b. Linear Regression in Python - An Introduction: https://realpython.com/linear-regression-in-python/
+c. Coursera Machine Learning Course (by Andrew Ng) - Linear Regression Module: https://www.coursera.org/lecture/machine-learning/model-representation-db3jS
+
 **See Also**:
 
 - [[ Lasso Regression]]
@@ -68,12 +81,6 @@ This code demonstrates how to create and evaluate a Linear Regression model usin
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a. Scikit-Learn Documentation for Linear Regression: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
-b. Linear Regression in Python - An Introduction: https://realpython.com/linear-regression-in-python/
-c. Coursera Machine Learning Course (by Andrew Ng) - Linear Regression Module: https://www.coursera.org/lecture/machine-learning/model-representation-db3jS
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-linear-regression
+tags: #numericaldata, #numericaldata/linearregression

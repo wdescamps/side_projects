@@ -1,9 +1,16 @@
-#  Random Forest Regression
 **Model Type:**  Regression Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a. Real estate pricing: Predicting house prices based on various features like location, square footage, year built, amenities, etc.
+
+b. Stock market prediction: Predicting stock prices based on historical data, technical indicators, and market sentiment.
+
+c. Demand forecasting: Predicting the demand for a product in the future based on historical sales data, seasonality, and other external factors.
+
+
+## Python code: 
 
 ```python
 # Import necessary libraries
@@ -47,6 +54,12 @@ print("R-squared: ", r2)
 This code demonstrates how to use the RandomForestRegressor from the Scikit-Learn library to predict housing prices in the well-known Boston Housing dataset. The code includes importing the necessary libraries, loading and preparing the dataset, creating and training the model, making predictions, and evaluating the model's performance using mean squared error and R-squared metrics.
 
 
+## Resources
+
+a. A Gentle Introduction to Random Forest for Regression - https://machinelearningmastery.com/random-forest-for-regression/
+b. How to run Random Forest Regression in Python - https://towardsdatascience.com/random-forest-in-python-24d0893d51c0
+c. Scikit-Learn Random Forest Regression Documentation - https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -71,12 +84,6 @@ This code demonstrates how to use the RandomForestRegressor from the Scikit-Lear
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a. A Gentle Introduction to Random Forest for Regression - https://machinelearningmastery.com/random-forest-for-regression/
-b. How to run Random Forest Regression in Python - https://towardsdatascience.com/random-forest-in-python-24d0893d51c0
-c. Scikit-Learn Random Forest Regression Documentation - https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-random-forest-regression
+tags: #numericaldata, #numericaldata/randomforestregression

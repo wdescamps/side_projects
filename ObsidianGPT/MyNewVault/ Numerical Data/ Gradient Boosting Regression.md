@@ -1,9 +1,16 @@
-#  Gradient Boosting Regression
 **Model Type:**  Regression Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a. Predicting house prices: Gradient Boosting Regression can be used to predict the price of residential properties based on various features such as neighborhood, number of rooms, property size, etc.
+
+b. Sales forecasting: In retail and e-commerce, Gradient Boosting Regression can be used to model and forecast future sales based on historical data, promotions, holidays, and other relevant features.
+
+c. Predicting customer lifetime value (CLV): Gradient Boosting Regression can be used to predict the total revenue a company can expect from a customer, considering customer usage patterns, demographics, and other factors.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -35,6 +42,12 @@ print('Mean Squared Error:', mse)
 This code snippet demonstrates how to use the Gradient Boosting Regressor implemented in scikit-learn to predict house prices using the Boston Housing dataset. After the model is trained, we evaluate its performance on the held-out test set using mean squared error as the evaluation metric.
 
 
+## Resources
+
+a. Introduction to Gradient Boosting Machines: A detailed walkthrough that covers the concepts of boosting, gradient descent, and gradient boosting efficiently. The article discusses the algorithm in detail and provides an example in Python. (https://medium.com/mlreview/gradient-boosting-from-scratch-1e317ae4587d)
+b. Understanding Gradient Boosting Machines: A comprehensive tutorial that covers the underlying algorithms and concepts of Gradient Boosting Machines with clear visualizations and explanations. (https://towardsdatascience.com/understanding-gradient-boosting-machines-9be756fe76ab)
+c. Scikit-learn documentation on Gradient Boosting: Official documentation on gradient boosting from scikit-learn, which includes more information about the algorithm, its parameters, and an example in Python. (https://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting)
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -59,12 +72,6 @@ This code snippet demonstrates how to use the Gradient Boosting Regressor implem
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a. Introduction to Gradient Boosting Machines: A detailed walkthrough that covers the concepts of boosting, gradient descent, and gradient boosting efficiently. The article discusses the algorithm in detail and provides an example in Python. (https://medium.com/mlreview/gradient-boosting-from-scratch-1e317ae4587d)
-b. Understanding Gradient Boosting Machines: A comprehensive tutorial that covers the underlying algorithms and concepts of Gradient Boosting Machines with clear visualizations and explanations. (https://towardsdatascience.com/understanding-gradient-boosting-machines-9be756fe76ab)
-c. Scikit-learn documentation on Gradient Boosting: Official documentation on gradient boosting from scikit-learn, which includes more information about the algorithm, its parameters, and an example in Python. (https://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting)
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-gradient-boosting-regression
+tags: #numericaldata, #numericaldata/gradientboostingregression

@@ -1,9 +1,16 @@
-#  Categorical Neural Networks (embedding layers)
 **Model Type:**  Classification Models
 **Data Type:**  Categorical Data
 
-**Python code **:
+## Use Cases :
 
+a. Natural Language Processing: Embedding layers are often used in NLP tasks for handling textual data by converting words into dense vector representations (word embeddings), which enable more efficient training and better model performance on tasks like text classification, sentiment analysis, and machine translation.
+
+b. Recommender Systems: Embedding layers can be employed for learning representations of users and items in collaborative filtering or content-based recommendation systems. The learned embeddings can then be used to make better recommendations by capturing the interactions between users and items or the relationships between items themselves.
+
+c. Graph Neural Networks: Categorical embeddings can be used in graph neural networks to learn node embeddings. These embeddings can capture various node features and their relations, making it possible to solve complex graph-based problems like node classification, link prediction, and community detection.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -38,10 +45,6 @@ model.fit(data, labels, epochs=50, batch_size=2)
 In this example, we create a simple neural network with an embedding layer to handle a categorical variable having 6 different categories (represented as integers from 1 to 6). We build a model using TensorFlow's Keras API, train it with a binary_crossentropy loss for predicting binary labels, and compile it with the Adam optimizer. Finally, we train the model on sample data for 50 epochs with a batch size of 2.
 
 
-**See Also**:
-
-- [[ Same as numerical classification models, as categorical data can be processed by encoding it into numerical representations.]]
-- [[ Categorical Naive Bayes]]
 ## Resources
 
 a. TensorFlow Embedding tutorial: This tutorial provides an introduction to embeddings and demonstrates how to create, train, and visualize embeddings using TensorFlow.
@@ -51,6 +54,10 @@ Link: https://pytorch.org/docs/stable/generated/torch.nn.Embedding.html
 c. Neural Network Embeddings Explained: This blog post by Thushan Ganegedara gives a comprehensive overview of embeddings, their applications, and how to build an embedding layer in TensorFlow.
 Link: https://towardsdatascience.com/neural-network-embeddings-explained-4d028e6f0526
 
+**See Also**:
+
+- [[ Same as numerical classification models, as categorical data can be processed by encoding it into numerical representations.]]
+- [[ Categorical Naive Bayes]]
 
 ---
-tags: #-categorical-data, #-categorical-data/-categorical-neural-networks-embedding-layers
+tags: #categoricaldata, #categoricaldata/categoricalneuralnetworksembeddinglayers

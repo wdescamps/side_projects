@@ -1,9 +1,16 @@
-#  Support Vector Machines (SVM)
 **Model Type:**  Classification Models
 **Data Type:**  Numerical Data
 
-**Python code **:
+## Use Cases :
 
+a. Image classification: SVM is used for identifying objects or patterns in images, like handwritten digits, facial recognition, or medical image analysis.
+
+b. Text classification: SVM is employed for categorizing documents or messages based on their topics, such as spam email filtering or sentiment analysis.
+
+c. Bioinformatics: SVM is utilized for finding patterns in biological data, such as gene function prediction, protein function prediction, or cancer classification based on gene expression patterns.
+
+
+## Python code: 
 
 ```python
 import numpy as np
@@ -44,6 +51,12 @@ In this example, we start by loading the iris dataset, extracting the petal leng
 The SVM model is then instantiated and fit to the training data. After training, predictions are made on the test data, and the accuracy is calculated using the `accuracy_score` function from sklearn.metrics.
 
 
+## Resources
+
+a. Scikit-learn's SVM Guide: https://scikit-learn.org/stable/modules/svm.html
+b. Support Vector Machines: A Simple Explanation: https://towardsdatascience.com/support-vector-machines-a-simple-explanation-29aa4742406e
+c. A Comprehensive Guide to Support Vector Machine (SVM): https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/
+
 **See Also**:
 
 - [[ Linear Regression]]
@@ -68,12 +81,6 @@ The SVM model is then instantiated and fit to the training data. After training,
 - [[ XGBoost]]
 - [[ LightGBM]]
 - [[ CatBoost]]
-## Resources
-
-a. Scikit-learn's SVM Guide: https://scikit-learn.org/stable/modules/svm.html
-b. Support Vector Machines: A Simple Explanation: https://towardsdatascience.com/support-vector-machines-a-simple-explanation-29aa4742406e
-c. A Comprehensive Guide to Support Vector Machine (SVM): https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/
-
 
 ---
-tags: #-numerical-data, #-numerical-data/-support-vector-machines-svm
+tags: #numericaldata, #numericaldata/supportvectormachinessvm
