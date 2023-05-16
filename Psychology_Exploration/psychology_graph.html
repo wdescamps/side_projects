@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "Industrial", "label": "Industrial", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Organizational Psychology", "label": "Organizational Psychology", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Sigmund Freud", "label": "Sigmund Freud", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Psychoanalysis", "label": "Psychoanalysis", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Carl Jung", "label": "Carl Jung", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Analytical Psychology", "label": "Analytical Psychology", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "B.F. Skinner", "label": "B.F. Skinner", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Behaviorism", "label": "Behaviorism", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Jean Piaget", "label": "Jean Piaget", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Developmental Psychology", "label": "Developmental Psychology", "shape": "dot", "size": 10, "type": "1. subfields"}, {"color": "#97c2fc", "id": "Albert Bandura", "label": "Albert Bandura", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Social Learning Theory", "label": "Social Learning Theory", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Lev Vygotsky", "label": "Lev Vygotsky", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Cognitive Development", "label": "Cognitive Development", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Carl Rogers", "label": "Carl Rogers", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Humanistic Psychology", "label": "Humanistic Psychology", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Carl Rogers, Abraham Maslow", "label": "Carl Rogers, Abraham Maslow", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Abraham Maslow", "label": "Abraham Maslow", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Humanistic Psychology, Hierarchy of Needs", "label": "Humanistic Psychology, Hierarchy of Needs", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Stanley Milgram", "label": "Stanley Milgram", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Social Psychology", "label": "Social Psychology", "shape": "dot", "size": 10, "type": "1. subfields"}, {"color": "#97c2fc", "id": "Philip Zimbardo", "label": "Philip Zimbardo", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Cognitive Development Theory", "label": "Cognitive Development Theory", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Zone of Proximal Development", "label": "Zone of Proximal Development", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Hierarchy of Needs", "label": "Hierarchy of Needs", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Theory of Cognitive Dissonance", "label": "Theory of Cognitive Dissonance", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Leon Festinger", "label": "Leon Festinger", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Attachment Theory", "label": "Attachment Theory", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "John Bowlby and Mary Ainsworth", "label": "John Bowlby and Mary Ainsworth", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Classical Conditioning", "label": "Classical Conditioning", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "related to Behaviorism (Ivan Pavlov)", "label": "related to Behaviorism (Ivan Pavlov)", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Operant Conditioning", "label": "Operant Conditioning", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "related to Behaviorism (B.F. Skinner)", "label": "related to Behaviorism (B.F. Skinner)", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Observational Learning", "label": "Observational Learning", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "related to Social Learning Theory (Albert Bandura)", "label": "related to Social Learning Theory (Albert Bandura)", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Stages of Cognitive Development", "label": "Stages of Cognitive Development", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "related to Cognitive Development Theory (Jean Piaget)", "label": "related to Cognitive Development Theory (Jean Piaget)", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Unconscious Mind", "label": "Unconscious Mind", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "related to Psychoanalysis (Sigmund Freud)", "label": "related to Psychoanalysis (Sigmund Freud)", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Inferiority Complex", "label": "Inferiority Complex", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "related to Analytical Psychology (Carl Jung)", "label": "related to Analytical Psychology (Carl Jung)", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Self", "label": "Self", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Actualization - related to Humanistic Psychology and Hierarchy of Needs (Abraham Maslow)", "label": "Actualization - related to Humanistic Psychology and Hierarchy of Needs (Abraham Maslow)", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Obedience to Authority", "label": "Obedience to Authority", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "related to Social Psychology (Stanley Milgram)", "label": "related to Social Psychology (Stanley Milgram)", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Bystander Effect", "label": "Bystander Effect", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "related to Social Psychology (John Darley and Bibb Latane)", "label": "related to Social Psychology (John Darley and Bibb Latane)", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "", "label": "", "shape": "dot", "size": 10, "type": "1. subfields"}, {"color": "#97c2fc", "id": "Cognitive Psychology", "label": "Cognitive Psychology", "shape": "dot", "size": 10, "type": "1. subfields"}, {"color": "#97c2fc", "id": "Clinical Psychology", "label": "Clinical Psychology", "shape": "dot", "size": 10, "type": "1. subfields"}, {"color": "#97c2fc", "id": "Biological Psychology", "label": "Biological Psychology", "shape": "dot", "size": 10, "type": "1. subfields"}, {"color": "#97c2fc", "id": "Health Psychology", "label": "Health Psychology", "shape": "dot", "size": 10, "type": "1. subfields"}, {"color": "#97c2fc", "id": "Forensic Psychology", "label": "Forensic Psychology", "shape": "dot", "size": 10, "type": "1. subfields"}, {"color": "#97c2fc", "id": "Personality Psychology", "label": "Personality Psychology", "shape": "dot", "size": 10, "type": "1. subfields"}]);
+                  edges = new vis.DataSet([{"from": "Industrial", "to": "Organizational Psychology", "width": 1}, {"from": "Sigmund Freud", "to": "Psychoanalysis", "width": 1}, {"from": "Carl Jung", "to": "Analytical Psychology", "width": 1}, {"from": "B.F. Skinner", "to": "Behaviorism", "width": 1}, {"from": "Jean Piaget", "to": "Developmental Psychology", "width": 1}, {"from": "Albert Bandura", "to": "Social Learning Theory", "width": 1}, {"from": "Lev Vygotsky", "to": "Cognitive Development", "width": 1}, {"from": "Carl Rogers", "to": "Humanistic Psychology", "width": 1}, {"from": "Humanistic Psychology", "to": "Carl Rogers, Abraham Maslow", "width": 1}, {"from": "Abraham Maslow", "to": "Humanistic Psychology, Hierarchy of Needs", "width": 1}, {"from": "Stanley Milgram", "to": "Social Psychology", "width": 1}, {"from": "Philip Zimbardo", "to": "Social Psychology", "width": 1}, {"from": "Cognitive Development Theory", "to": "Jean Piaget", "width": 1}, {"from": "Zone of Proximal Development", "to": "Lev Vygotsky", "width": 1}, {"from": "Hierarchy of Needs", "to": "Abraham Maslow", "width": 1}, {"from": "Theory of Cognitive Dissonance", "to": "Leon Festinger", "width": 1}, {"from": "Attachment Theory", "to": "John Bowlby and Mary Ainsworth", "width": 1}, {"from": "Classical Conditioning", "to": "related to Behaviorism (Ivan Pavlov)", "width": 1}, {"from": "Operant Conditioning", "to": "related to Behaviorism (B.F. Skinner)", "width": 1}, {"from": "Observational Learning", "to": "related to Social Learning Theory (Albert Bandura)", "width": 1}, {"from": "Stages of Cognitive Development", "to": "related to Cognitive Development Theory (Jean Piaget)", "width": 1}, {"from": "Unconscious Mind", "to": "related to Psychoanalysis (Sigmund Freud)", "width": 1}, {"from": "Inferiority Complex", "to": "related to Analytical Psychology (Carl Jung)", "width": 1}, {"from": "Self", "to": "Actualization - related to Humanistic Psychology and Hierarchy of Needs (Abraham Maslow)", "width": 1}, {"from": "Obedience to Authority", "to": "related to Social Psychology (Stanley Milgram)", "width": 1}, {"from": "Bystander Effect", "to": "related to Social Psychology (John Darley and Bibb Latane)", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

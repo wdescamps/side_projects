@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "cba22cd678fe1e5e",
+        "id": "406d766739eaa4dd",
         "type": "tabs",
         "children": [
           {
-            "id": "b086cb729ed7cca0",
+            "id": "5aaeaa03355556f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": " Unstructured Data/ Autoencoders.md",
+                "file": " Audio Data/ Listen, Attend and Spell (LAS).md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": " Unstructured Data/ Autoencoders.md",
+                "file": " Audio Data/ Listen, Attend and Spell (LAS).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": " Unstructured Data/ Autoencoders.md",
+                "file": " Audio Data/ Listen, Attend and Spell (LAS).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": " Unstructured Data/ Autoencoders.md"
+                "file": " Audio Data/ Listen, Attend and Spell (LAS).md"
               }
             }
           }
@@ -147,10 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b086cb729ed7cca0",
+  "active": "5aaeaa03355556f0",
   "lastOpenFiles": [
-    " Unstructured Data/ DBSCAN.md",
+    " Audio Data/ WaveNet.md",
+    " Audio Data/ Deep Q.md",
     " Unstructured Data/ Autoencoders.md",
+    " Unstructured Data/ DBSCAN.md",
     " Numerical Data/ LightGBM.md",
     "TF.md",
     "Ridge Regression.md",
@@ -173,8 +174,6 @@
     "Linear Regression.md",
     "Numerical/Ridge Regression.md",
     " Unstructured Data/ t.md",
-    " Unstructured Data/ Uniform Manifold Approximation and Projection (UMAP).md",
-    " Unstructured Data/ Principal Component Analysis (PCA).md",
     " Unstructured Data",
     " Audio Data",
     " Time Series Data",
