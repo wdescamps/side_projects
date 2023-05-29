@@ -14,8 +14,17 @@
               "type": "graph",
               "state": {}
             }
+          },
+          {
+            "id": "6a386fe99ab04ff0",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -138,7 +147,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5aaeaa03355556f0",
+  "active": "6a386fe99ab04ff0",
   "lastOpenFiles": [
     " Audio Data/ Monte Carlo Tree Search (MCTS).md",
     " Numerical Data/ XGBoost.md",
