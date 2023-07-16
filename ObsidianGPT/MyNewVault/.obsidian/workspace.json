@@ -4,27 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "406d766739eaa4dd",
+        "id": "eb1421a18d6e0d21",
         "type": "tabs",
         "children": [
           {
-            "id": "5aaeaa03355556f0",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "6a386fe99ab04ff0",
+            "id": "d3db16599cc1e8bf",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -147,13 +138,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6a386fe99ab04ff0",
+  "active": "c039dccab2717a87",
   "lastOpenFiles": [
+    " Numerical Data/ Random Forests.md",
+    " Numerical Data/ Elastic Net.md",
+    " Categorical Data/ Categorical Neural Networks (embedding layers).md",
+    " Categorical Data/ Categorical Naive Bayes.md",
+    " Audio Data/ Soft Actor.md",
+    " Audio Data/ Q.md",
     " Audio Data/ Monte Carlo Tree Search (MCTS).md",
+    " Audio Data/ MidiNet.md",
+    " Audio Data/ Mel Frequency Cepstral Coefficients (MFCC).md",
+    " Audio Data/ DeepSpeech.md",
+    " Audio Data/ Deep Q.md",
+    " Audio Data/ Actor.md",
     " Numerical Data/ XGBoost.md",
     " Audio Data/ Listen, Attend and Spell (LAS).md",
     " Audio Data/ WaveNet.md",
-    " Audio Data/ Deep Q.md",
     " Unstructured Data/ Autoencoders.md",
     " Unstructured Data/ DBSCAN.md",
     " Numerical Data/ LightGBM.md",
@@ -165,16 +166,6 @@
     " Image Data/ Variational Autoencoders (VAE).md",
     " Audio Data/ Transformer models.md",
     " Numerical Data/ Support Vector Regression (SVR).md",
-    " Numerical Data/ Random Forest Regression.md",
-    " Numerical Data/ Decision Tree Regression.md",
-    " Numerical Data/ AdaBoost.md",
-    " Text Data/ Recurrent Neural Networks (RNN).md",
-    " Text Data/ Long Short.md",
-    " Text Data/ GloVe.md",
-    " Categorical Data/Same as numerical classification models, as categorical data can be processed by encoding it into numerical representations..md",
-    " Categorical Data/ Categorical Neural Networks (embedding layers).md",
-    " Categorical Data/ Categorical Naive Bayes.md",
-    " Numerical Data/ Elastic Net.md",
     " Unstructured Data",
     " Audio Data",
     " Time Series Data",
