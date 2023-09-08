@@ -1,0 +1,54 @@
+1. Description:
+The Polynomial Regression model is a type of regression analysis in which the relationship between the independent variable x and the dependent variable y is modeled as an nth degree polynomial. It expands the linear model by adding extra predictors, obtained by raising each of the original predictors to a power. Polynomial regression fits a nonlinear relationship between the value of x and the corresponding conditional mean of y, denoted E(y |x).
+
+2. Pros and Cons:
+
+Pros:
+- Polynomial regression models can fit a wider range of data than linear regression, as they can model relationships that change in direction.
+- With high-degree polynomials, you can fit nearly any shape dataset.
+- They're great for modeling curves and other complex data shapes.
+
+Cons:
+- Polynomial regression models can overfit data easily, leading to high-variance models that do not generalize well to future data.
+- The addition of too many polynomial terms can greatly enlarge the amount of collinearity in the model, making it difficult to interpret.
+- The use of high degree polynomial regression can result in the model oscillating between points causing unrealistic predictions.
+
+3. Use Cases:
+- Polynomial regression is commonly used in financial forecasting, where trends may not be linear but could follow some polynomial order, e.g., the prediction of stock prices.
+- It can be used in a physical sciences context where relationships might inherently be polynomial, e.g., in electronics or mechanics.
+- It's also used in machine learning algorithms that need to model relationships between variables accurately, such as support vector machines or neural networks.
+
+4. Resources for implementation:
+- [Polynomial Regression Explained](https://www.datacamp.com/community/tutorials/polynomial-regression)
+- [Polynomial Regression in Python](https://towardsdatascience.com/machine-learning-polynomial-regression-with-python-5328e4e8a386)
+- [Polynomial Regression in Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html)
+
+5. Code sample:
+
+```python
+import numpy as np
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+
+# Generate x and y vectors
+x = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+y = np.array([2, 3, 5, 7, 11, 13, 17, 19, 23])
+
+# We transform our matrix of input x into a matrix of higher degree polynomials of x
+poly = PolynomialFeatures(degree = 3, include_bias = False)
+x_poly = poly.fit_transform(x.reshape(-1, 1))
+
+# Perform linear regression with our new matrix of predictors
+lm = LinearRegression()
+lm.fit(x_poly, y)
+
+# Now we can use lm to predict y values
+y_predicted = lm.predict(x_poly)
+```
+
+6. Experts:
+   - [Andrew Ng](https://www.andrewng.org/), he is a Professor at Stanford University, Co-founder of Coursera and the founder of Google Brain and Landing AI.
+   - [Yoshua Bengio](https://ca.linkedin.com/in/yoshua-bengio-4102183), he is the head of the Montreal Institute for Learning Algorithms (MILA).
+   - Trevor Hastie, is a Professor at Stanford University and is involved in the development of Scikit-Learn [(GitHub)](https://github.com/trevorhastie).
+   - [Sebastian Raschka](https://www.linkedin.com/in/sebastianraschka/), he is a machine learning educator and author of "Python Machine Learning" book.
+   - [Jake VanderPlas](https://github.com/jakevdp), he is a Director of Open Software at University of Washington's Data Science Centre, with a focus on Python and Machine Learning.

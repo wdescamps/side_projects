@@ -1,0 +1,62 @@
+1. Description:
+Linear regression is a fundamental type of predictive analysis which is used to understand the relationship between two or more variables. The variable we want to predict is called the dependent variable (or sometimes, the outcome, target). The variables we use to predict the value of the dependent variable are called the independent variables (or sometimes, the predictors, inputs, regressors).
+
+2. Pros and Cons:
+   Pros:
+   - Simple to understand and interpret.
+   - Little to no tuning required.
+   - Fast to model and predict.
+   - Works best with numerical continuous data.
+   
+   Cons:
+   - It assumes linear relationship between independent and dependent variables.
+   - It can be adversely affected by outliers.
+   - Linear regression may over-simplify real-world problems by assuming a linear relationship among the variables.
+
+3. Use Cases:
+   - Predicting sales amount given advertising budgets in different venues (TV, Radio, Newspapers).
+   - Predicting house prices given house features such as number of rooms, size, and location.
+   - Prediction of student's grades based on factors such as attendance, number of hours studied etc.
+
+4. Resources:
+   - [Linear Regression in Python with Scikit-Learn](https://realpython.com/linear-regression-in-python/)
+   - [A Gentle Introduction to Linear Regression With Maximum Likelihood Estimation](https://machinelearningmastery.com/linear-regression-with-maximum-likelihood-estimation/)
+   - [Complete Guide To Linear Regression In Python](https://towardsdatascience.com/complete-guide-to-linear-regression-in-python-80ce5e551b17)
+
+5. Python Code:
+```python
+   from sklearn.model_selection import train_test_split 
+   from sklearn.linear_model import LinearRegression
+   from sklearn import metrics
+   import numpy as np
+   import matplotlib.pyplot as plt
+   import pandas as pd
+     
+   # Load dataset
+   dataset = pd.read_csv('dataset.csv')
+   X = dataset['Independent_Variable'].values.reshape(-1,1)
+   y = dataset['Dependent_Variable'].values.reshape(-1,1)
+   
+   # Split data into training and test sets
+   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0)
+   
+   # Training the algorithm
+   regressor = LinearRegression()
+   regressor.fit(X_train, y_train)
+   
+   # Making predictions using the model
+   y_pred = regressor.predict(X_test)
+
+   # Plotting the results
+   plt.scatter(X_test, y_test, color='black')
+   plt.plot(X_test, y_pred, color='blue', linewidth=3)
+   plt.show()
+```
+6. Expertise:
+   - Andrew Ng - [LinkedIn Profile](https://www.linkedin.com/in/andrewyng/)
+   - Sebastian Raschka - [Github Profile](https://github.com/rasbt)
+   - Chris Albon - [Github Profile](https://github.com/chrisalbon)
+   - Jason Brownlee - [Github Profile](https://github.com/jbrownlee)
+   - Trevor Hastie - [Github Profile](https://github.com/trevorhastie)
+   
+Please note that Github or LinkedIn profiles might not fully reflect the individual's expertise in a specific area like linear regression. The list above is compiled based on their broader contributions in the field of machine learning and data science.
