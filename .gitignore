@@ -161,4 +161,9 @@ cython_debug/
 *.cfg
 *.csv
 *.xlsx
-Music&Humans/Exploration matinale avec papa.ipynb
+
+#Postgresql
+/PostgreSQL.nosync/
+
+
+
