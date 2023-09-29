@@ -1,0 +1,12 @@
+{
+  "publish:view-changes": [
+    {
+      "modifiers": [
+        "Alt",
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ]
+}
