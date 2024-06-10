@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Audio Waveform</title>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="https://cdn.socket.io/socket.io-4.0.0.js"></script>
+</head>
+<body>
+    <div id="waveform"></div>
+    <script>
+        var socket = io.connect('http://' + document.domain + ':' + location.port + '/audio');
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'blue',
+            progressColor: 'purple'
+        });
+
+        socket.on('audio_data', function(msg) {
+            wavesurfer.loadDecodedBuffer(msg.data);
+        });
+    </script>
+</body>
+</html>

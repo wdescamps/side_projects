@@ -8,14 +8,23 @@
         "type": "tabs",
         "children": [
           {
-            "id": "515c9494e759a442",
+            "id": "96c618fcb95feed8",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "025a10490a729514",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -61,8 +70,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -170,9 +178,17 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "515c9494e759a442",
+  "active": "025a10490a729514",
   "lastOpenFiles": [
     "Home.md",
+    "ObsidianGPT/ImageData/StyleTransfer/CycleGAN.md",
+    "ObsidianGPT/StructuredData/Clustering/SpectralClustering.md",
+    "ObsidianGPT/AudioData/MusicRecommendation/Autoencoders.md",
+    "TimeSeriesData.md",
+    "TextData.md",
+    "ObsidianGPT/GraphData/GraphNetworks/ChebNet.md",
+    "ObsidianGPT/StructuredData/Clustering/K-MeansClustering.md",
+    "ObsidianGPT/TextData/NaturalLanguageProcessing/GatedRecurrentUnits.md",
     "ObsidianGPT/StructuredData/Regression/DecisionTreeRegression.md",
     "ObsidianGPT/TextData/NaturalLanguageProcessing/GPT-3.md",
     "ObsidianGPT/ImageData/ImageClassification/ConvolutionalNeuralNetworks.md",
@@ -190,14 +206,6 @@
     "ObsidianGPT/AudioData/AudioClassification/AttentionModels.md",
     "GraphData.md",
     "AudioData.md",
-    "ObsidianGPT/StructuredData/Regression/LinearRegression.md",
-    "ObsidianGPT/ImageData/ImageCaptioning/Show,AttendandTell.md",
-    "Link.md",
-    "TimeSeriesData.md",
-    "ObsidianGPT/AudioData/AudioClassification/ConvolutionalNeuralNetworks.md",
-    "ObsidianGPT/AudioData/AudioClassification/GatedRecurrentUnits.md",
-    "TextData.md",
-    "ImageData.md",
     "ObsidianGPT/AudioData 1",
     "ObsidianGPT/attachments/site_picture.jpeg",
     "ObsidianGPT/attachments/site_image.jpg",
